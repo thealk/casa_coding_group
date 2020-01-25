@@ -1,0 +1,15 @@
+--- 
+title: "CASA Lab Coding for Speech Group"
+author: "PI: Thea Knowles"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is the record keeping site for the CASA Lab Coding for Speech group."
+---
+
+# Welcome
+
+# Tentative Plan for 2020
