@@ -13,3 +13,4 @@ description: "This is the record keeping site for the CASA Lab Coding for Speech
 # Welcome
 
 # Tentative Plan for 2020
+- a note
