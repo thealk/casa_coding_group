@@ -1,6 +1,6 @@
 --- 
 title: "CASA Lab Coding for Speech Group"
-author: "PI: Thea Knowles"
+#author: "PI: Thea Knowles"
 #date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -17,11 +17,11 @@ description: "This is the record keeping site for the CASA Lab Coding for Speech
 library(emo)
 ```
 
-The purpose of this group is for members and friends of the CASA Lab to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be [**R**](https://www.r-project.org/) and [**Praat**](http://www.fon.hum.uva.nl/praat/), though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.
+The purpose of this group is for members and friends of the [CASA Lab](https://casa-lab.netlify.com) to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be [**R**](https://www.r-project.org/) and [**Praat**](http://www.fon.hum.uva.nl/praat/), though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.
 
 We will meet approximately twice a month. Meeting times TBD following an introductory meet and greet with interested members. Sometimes Thea will lead the group, and other weeks students may sign up to lead. 
 
-This is designed to be an ***informal, low-stakes, hands-on group*** to help us all learn. Meet ups will not be mandatory. There is **no expectation** of prior coding experience for you to join this group, though, if you do have experience, that's great too!
+This is designed to be an ***informal, low-stakes, hands-on group*** to help us all learn in a fun, supportive environment. Meet ups will not be mandatory, and topics will to some extent be driven by group members. There is **no expectation** of prior coding experience for you to join this group, though, if you do have experience, that's great too!
 
 **Skills you may expect to gain:**
 
