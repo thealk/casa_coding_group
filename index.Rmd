@@ -1,7 +1,7 @@
 --- 
 title: "CASA Lab Coding for Speech Group"
 author: "PI: Thea Knowles"
-date: "`r Sys.Date()`"
+#date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -10,7 +10,29 @@ link-citations: yes
 description: "This is the record keeping site for the CASA Lab Coding for Speech group."
 ---
 
-# Welcome
+# Welcome {-}
 
-# Tentative Plan for 2020
-- a note
+
+```{r echo=FALSE}
+library(emo)
+```
+
+The purpose of this group is for members and friends of the CASA Lab to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be [**R**](https://www.r-project.org/) and [**Praat**](http://www.fon.hum.uva.nl/praat/), though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.
+
+We will meet approximately twice a month. Meeting times TBD following an introductory meet and greet with interested members. Sometimes Thea will lead the group, and other weeks students may sign up to lead. 
+
+This is designed to be an ***informal, low-stakes, hands-on group*** to help us all learn. Meet ups will not be mandatory. There is **no expectation** of prior coding experience for you to join this group, though, if you do have experience, that's great too!
+
+**Skills you may expect to gain:**
+
+- `r emo::ji("memo")` **Report generation**: How to communicate your findings by integrating your writing with your analysis code (e.g., using [R Markdown](https://bookdown.org/yihui/rmarkdown/))
+- `r emo::ji("bar_chart")` **Data visualization**: Creating informative and aesthetically pleasing data visualizations for communicating your results (e.g., using [`ggplot`](https://ggplot2.tidyverse.org/reference/ggplot.html))
+- `r emo::ji("open_file_folder")` **File organization & manipulation**: How to move, rename, or iterate over files on your computer.
+- `r emo::ji("speaking_head")` **Acoustic analysis**: How to write scripts in [Praat](http://www.fon.hum.uva.nl/praat/) for doing acoustic analysis on speech audio files.
+
+
+<center>
+[![](img/casa-lab-logo.png)](https://casa-lab.netlify.com)
+</center>
+
+
