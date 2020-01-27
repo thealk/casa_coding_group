@@ -39,6 +39,7 @@ This is designed to be an ***informal, low-stakes, hands-on group*** to help us 
 **Interested in joining the group?**
 
 - Send an email to the PI, [Thea Knowles](mailto:theaknow@buffalo.edu).
+- Join our [Slack channel](https://join.slack.com/t/casa-lab-ub/shared_invite/enQtOTEyMDk1MzkxMjgzLWU3ZGVhYWViOWU1YjJkZjA0OGEzZGNkMTdhNjM4ZWM5N2FlMDEwOWI3MzE3MWQ4YzM1MmMzYmFiYWIxZGI2NTg), which we will use as a chat forum.
 
 <center>
 [![](img/casa-lab-logo.png)](https://casa-lab.netlify.com)
