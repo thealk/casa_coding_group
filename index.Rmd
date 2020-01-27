@@ -1,6 +1,6 @@
 --- 
 title: "CASA Lab Coding for Speech Group"
-#author: "PI: Thea Knowles"
+author: "PI: Thea Knowles, PhD"
 #date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book

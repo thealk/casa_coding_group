@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>CASA Lab Coding for Speech Group</title>
   <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
-  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="CASA Lab Coding for Speech Group" />
   <meta property="og:type" content="book" />
@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
   
 
-<meta name="author" content="PI: Thea Knowles" />
+<meta name="author" content="PI: Thea Knowles, PhD" />
 
 
 
@@ -31,7 +31,7 @@
   
   
 
-<link rel="next" href="intro.html">
+<link rel="next" href="intro.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -90,18 +93,24 @@
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">CASA Lab Coding for Speech Group</h1>
-<p class="author"><em>PI: Thea Knowles</em></p>
+<p class="author"><em>PI: Thea Knowles, PhD</em></p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>The purpose of this group is for members and friends of the CASA Lab to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be <a href="https://www.r-project.org/"><strong>R</strong></a> and <a href="http://www.fon.hum.uva.nl/praat/"><strong>Praat</strong></a>, though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.</p>
-<p>We will meet approximately twice a month. Meeting times TBD following an introductory meet and greet with interested members.</p>
+<div id="welcome" class="section level1 unnumbered" number="">
+<h1 class="unnumbered" number="">Welcome</h1>
+<p>The purpose of this group is for members and friends of the <a href="https://casa-lab.netlify.com">CASA Lab</a> to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be <a href="https://www.r-project.org/"><strong>R</strong></a> and <a href="http://www.fon.hum.uva.nl/praat/"><strong>Praat</strong></a>, though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.</p>
+<p>We will meet approximately twice a month. Meeting times TBD following an introductory meet and greet with interested members. Sometimes Thea will lead the group, and other weeks students may sign up to lead.</p>
+<p>This is designed to be an <strong><em>informal, low-stakes, hands-on group</em></strong> to help us all learn in a fun, supportive environment. Meet ups will not be mandatory, and topics will to some extent be driven by group members. There is <strong>no expectation</strong> of prior coding experience for you to join this group, though, if you do have experience, that’s great too!</p>
 <p><strong>Skills you may expect to gain:</strong></p>
 <ul>
 <li>📝 <strong>Report generation</strong>: How to communicate your findings by integrating your writing with your analysis code (e.g., using <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown</a>)</li>
 <li>📊 <strong>Data visualization</strong>: Creating informative and aesthetically pleasing data visualizations for communicating your results (e.g., using <a href="https://ggplot2.tidyverse.org/reference/ggplot.html"><code>ggplot</code></a>)</li>
 <li>📂 <strong>File organization &amp; manipulation</strong>: How to move, rename, or iterate over files on your computer.</li>
 <li>🗣 <strong>Acoustic analysis</strong>: How to write scripts in <a href="http://www.fon.hum.uva.nl/praat/">Praat</a> for doing acoustic analysis on speech audio files.</li>
+</ul>
+<p><strong>Equipment you need to have:</strong></p>
+<ul>
+<li>You may find it most helpful if you have <a href="https://www.r-project.org/">R</a> and <a href="https://rstudio.com/">R Studio</a> installed on your own laptop to bring to meet ups. If you don’t have your own laptop, we can arrange time for you to work on the CASA lab computers.</li>
+<li>Before each meet up, you will get an email telling you what else you need to install for that meet up, if anything.</li>
 </ul>
 <center>
 <a href="https://casa-lab.netlify.com"><img src="img/casa-lab-logo.png" /></a>
@@ -119,11 +128,13 @@
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -131,12 +142,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -148,6 +158,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
