@@ -1,11 +1,15 @@
-# Tentative Plan {#intro}
+# Tentative Plan & Schedule {#intro}
 
 
 The schedule will depend on the goals of the group. At the moment (as of late January 2020), the tentative plan is the following:
 
 - Biweekly meet ups in the CASA Lab (104 Cary Hall, UB South Campus).
 - Each meet up will involve a brief tutorial to the skill we'll be working on.
+- A new challenge will be addressed at the end, which we will go over at the next meeting.
 
 Schedule of meet ups will appear below following the first meet up.
 
 *To appear...*
+
+#### Topic 1: Generate summary reports in R and R Markdown (date TBD) {-}
+This first topic will serve as a mini introduction to R and R Studio. We will learn how to produce a short summary report using R Markdown, which allows us to integrate text and R code in the same document. These summary documents will be used as a way to keep track of our exercises and notes throughout the term, serving as a set of reference documents for us as we go along. Using R Markdown will also be useful down the line, as it can also be used to write presentations, articles, websites/blogs, and theses. For example, this website was written using R Markdown.
