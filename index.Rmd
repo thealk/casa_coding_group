@@ -35,6 +35,11 @@ This is designed to be an ***informal, low-stakes, hands-on group*** to help us 
 - You may find it most helpful if you have [R](https://www.r-project.org/) and [R Studio](https://rstudio.com/) installed on your own laptop to bring to meet ups. If you don't have your own laptop, we can arrange time for you to work on the CASA lab computers.
 - Before each meet up, you will get an email telling you what else you need to install for that meet up, if anything.
 
+## Contact {-}
+**Interested in joining the group?**
+
+- Send an email to the PI, [Thea Knowles](mailto:theaknow@buffalo.edu).
+
 <center>
 [![](img/casa-lab-logo.png)](https://casa-lab.netlify.com)
 </center>
