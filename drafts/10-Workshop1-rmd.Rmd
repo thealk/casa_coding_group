@@ -1,0 +1,60 @@
+
+# Workshops{-}
+
+## Documenting your learning in R with R Markdown {#rmarkdown}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(emo)
+```
+
+The goal of today's workshop is to establish a workflow for using the [`rmarkdown`](https://rmarkdown.rstudio.com/) package to "knit" together R code and text to create summary documents.
+
+It might seem kind of odd to launch into a workflow that ties together R code *and other stuff* before we've actually had a chance to learn any R code, but here's the rationale:
+
+1. `r emo::ji("hammer_and_wrench")` **Foundational skill:** R Markdown document creations can serve as a way to document the rest of our skills. At each workshop, we'll create another R Markdown document (extension .`Rmd`) to log the skills we worked on and any notes you'd like to keep for yourself. In this way, this skill is *foundational*.
+2. `r emo::ji("raised_hands")` **Instant gratification!** R Markdown documents can be rendered without much working knowledge of R at all. It's a lovely thing when you can get something up and running RIGHT AWAY
+
+### Markdown {-}
+**Markdown** refers to a set of conventions for editing plain text. With markdown syntax, you write as you normally would in a text editor or word processor, but you signal text formatting with certain characters. Markdown (which is distinguished from *markUP* language) is designed to be **easily readable, easy to write, and easy to learn**.
+
+```
+*italic*
+**bold**
+**italic and bold!***
+
+# First level header
+## Second level header
+### Third level header
+
+1. the first item on a numbered list
+2. the second item on a numbered list
+
+- the first item on a bulleted list
+- the second item on a bulleted list
+  - item 2a
+  
+Tables look like this: 
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+```
+
+### Code chunks {-}
+
+
+## More advanced
+- inline R code
+- 
+
+
+### Resources {-}
+- [RMarkdown: The definitive guide](https://bookdown.org/yihui/rmarkdown/)
+- [R for data science: R Markdown](https://r4ds.had.co.nz/r-markdown.html)
+- [RMarkdown cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [RMarkdown reference guide from RStudio](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+- [RMarkdown Cheatsheet from RStudio](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+

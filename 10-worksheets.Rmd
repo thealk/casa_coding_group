@@ -1,4 +1,7 @@
-# Workbook {#workbook}
+<!-- # (PART\*) Workbook {-} -->
 
+# Workbook {-}
 
 This is where you will find a log of the exercises we work on.
+
+

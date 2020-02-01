@@ -30,16 +30,17 @@ This is designed to be an ***informal, low-stakes, hands-on group*** to help us 
 - `r emo::ji("open_file_folder")` **File organization & manipulation**: How to move, rename, or iterate over files on your computer.
 - `r emo::ji("speaking_head")` **Acoustic analysis**: How to write scripts in [Praat](http://www.fon.hum.uva.nl/praat/) for doing acoustic analysis on speech audio files.
 
-**Equipment you need to have:**
-
-- You may find it most helpful if you have [R](https://www.r-project.org/) and [R Studio](https://rstudio.com/) installed on your own laptop to bring to meet ups. If you don't have your own laptop, we can arrange time for you to work on the CASA lab computers.
-- Before each meet up, you will get an email telling you what else you need to install for that meet up, if anything.
 
 ## Contact {-}
 **Interested in joining the group?**
 
 - Send an email to the lab director, [Thea Knowles](mailto:theaknow@buffalo.edu).
 - Join our [Slack channel](https://join.slack.com/t/casa-lab-ub/shared_invite/enQtOTEyMDk1MzkxMjgzLWU3ZGVhYWViOWU1YjJkZjA0OGEzZGNkMTdhNjM4ZWM5N2FlMDEwOWI3MzE3MWQ4YzM1MmMzYmFiYWIxZGI2NTg), which we will use as a chat forum.
+
+## Prerequisites {-}
+
+- You may find it most helpful if you have [R](https://www.r-project.org/) and [R Studio](https://rstudio.com/) installed on your own laptop to bring to meet ups. If you don't have your own laptop, we can arrange time for you to work on the CASA lab computers.
+- Before each meet up, you will get an email telling you what else you need to install for that meet up, if anything.
 
 <center>
 [![](img/casa-lab-logo.png)](https://casa-lab.netlify.com)

@@ -1,0 +1,11 @@
+# Resources {-}
+
+
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [Teacup Giraffes](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html): Intro modules to statistics with R
+- ["R you with me?"](https://rladiessydney.org/courses/ryouwithme/): A series of online learning resources for beginner R users designed by [R-Ladies Sydney](https://rladiessydney.org/)
+
+There will also be content-specific resources posted at the end of each [workshop][Workbook].
+
+<!-- Check out [our resources][Workshops] -->
+<!-- Note I linked to the section header text -->
