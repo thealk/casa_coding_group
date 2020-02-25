@@ -17,7 +17,7 @@ library(plyr)
 starbucks <- read.csv("presentations/1_materials/starbucks_drinkMenu_expanded.csv")
 
 # View data
-View(starbucks)
+#View(starbucks)
 str(starbucks$caffeine)
 unique(starbucks$caffeine)
 
