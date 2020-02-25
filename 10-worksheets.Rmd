@@ -1,7 +1,5 @@
-<!-- # (PART\*) Workbook {-} -->
+# (PART\*) Workbook Topics {-}
 
-# Workbook {-}
-
-This is where you will find a log of the exercises we work on.
+<!-- # Workbook {-} -->
 
 

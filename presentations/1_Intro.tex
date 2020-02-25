@@ -1,0 +1,612 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode=true}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Intro to CASA Coding Group},
+  hidelinks,
+}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\usepackage{longtable,booktabs}
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{Intro to CASA Coding Group}
+\author{}
+\date{\vspace{-2.5em}25/02/2020}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Outline for today}
+\protect\hypertarget{outline-for-today}{}
+
+\begin{enumerate}
+\tightlist
+\item
+  Purpose of group
+\item
+  Our tools: Languages/software we will learn
+\item
+  Examples of coding applications for speech
+\item
+  Download R, RStudio, Praat
+\item
+  Intro to RStudio
+\item
+  Topics for the term
+\end{enumerate}
+
+\end{frame}
+
+\hypertarget{purpose-of-this-group}{%
+\section{Purpose of this group}\label{purpose-of-this-group}}
+
+\begin{frame}{Purpose of this group}
+\protect\hypertarget{purpose-of-this-group-1}{}
+
+\begin{itemize}
+\tightlist
+\item
+  Develop skills that make it easier to do our job well as speech
+  researchers
+\item
+  Create a community that comes together to make it easier to learn this
+  stuff
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Purpose of this group}
+\protect\hypertarget{purpose-of-this-group-2}{}
+
+\textbf{Computer Coding}: Writing something in a language a computer can
+understand in order to tell the computer to do a specific thing or set
+of things.
+
+Why bother telling a computer what to do when we can just do it
+ourselves?
+
+\end{frame}
+
+\begin{frame}{Purpose of this group}
+\protect\hypertarget{purpose-of-this-group-3}{}
+
+\textbf{\emph{Why bother telling a computer what to do when we can just
+do it ourselves?}}
+
+\begin{itemize}
+\tightlist
+\item
+  Automate repetitive tasks like\ldots{}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    opening/closing/saving files
+  \end{itemize}
+\item
+  Minimize human error in data preparation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Renaming things in a spreadsheet
+  \end{itemize}
+\item
+  Keep a careful log of how we did our analyses
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Code = instructions
+  \end{itemize}
+\item
+  ``Reproducible research''
+\item
+  Fun! (seriously!)
+\end{itemize}
+
+\end{frame}
+
+\hypertarget{our-tools-logistics}{%
+\section{Our tools: Logistics}\label{our-tools-logistics}}
+
+\begin{frame}{Project Website}
+\protect\hypertarget{project-website}{}
+
+\begin{itemize}
+\tightlist
+\item
+  Website: \url{https://casa-lab.com/coding-group/}
+\item
+  Slack channel: \url{https://casa-lab-ub.slack.com/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://join.slack.com/t/casa-lab-ub/shared_invite/enQtOTU2OTcwMzg3MDQzLTk4NmM0MjhlYTAyY2JkODhkNDZkYmE5MTc3M2VkZTEyNDg1YjhmMmM0ZmEwYjlkYmI5NTMyZjYxYjk5MDNmMWQ}{Invite
+    to join Slack channel} (I will send this out via email after today)
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\hypertarget{our-tools-languages-software}{%
+\section{Our tools: Languages \&
+Software}\label{our-tools-languages-software}}
+
+\begin{frame}{First: Some terminology}
+\protect\hypertarget{first-some-terminology}{}
+
+\textbf{Coding}: Writing in a language a computer can understand
+
+\textbf{Scripting}: A type of coding that tells a specific program
+exactly what actions to take
+
+\textbf{Programming}: Writing code that serves to actually create
+another program (an app, software, etc)
+
+\textbf{Scripts}: Text files containing code.
+
+\begin{itemize}
+\tightlist
+\item
+  Scripting, coding, and programming are sometimes used interchangeably
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{First: Some terminology}
+\protect\hypertarget{first-some-terminology-1}{}
+
+\textbf{Functions}: A certain named format of code that outlines a
+procedure. Often this allows several lines of code to be executed with a
+single line of code (by using the name of the function)
+
+\begin{itemize}
+\tightlist
+\item
+  For example, in Excel, you may use functions like \texttt{=sum(2,2)}.
+  \texttt{sum()} is the function that takes input (in this case,
+  numbers), and performs an a specific action (adds them).
+\end{itemize}
+
+\textbf{Calling}: Invoke a function by using the name of the function
+and specifying parameters.
+
+\begin{itemize}
+\tightlist
+\item
+  For example: I ``call the sum function'' when I type it out with its
+  inputs and execute it in excel.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Our tools}
+\protect\hypertarget{our-tools}{}
+
+\begin{enumerate}
+\tightlist
+\item
+  R and R Studio
+\item
+  Praat
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section}{}
+
+\begin{itemize}
+\tightlist
+\item
+  ``R is a free software environment for statistical computing and
+  graphics.''
+\item
+  \href{https://www.r-project.org/}{Download here}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-1}{}
+
+\begin{itemize}
+\tightlist
+\item
+  RStudio is a handy interface that helps you use R.
+\item
+  \href{https://rstudio.com/products/rstudio/download/}{Download Desktop
+  version}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{ Praat}
+\protect\hypertarget{praat}{}
+
+\begin{itemize}
+\tightlist
+\item
+  ``Doing phonetics by computer'': Praat is a powerful software program
+  that also has its own specialized language for writing scripts
+\item
+  Praat = ``Speech'' in Dutch
+\item
+  Looks like it hasn't been updated since 1995 but it has and it's great
+\item
+  ``World's worst programming language''
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{don't let the haters get you down}
+  \end{itemize}
+\item
+  \href{http://www.fon.hum.uva.nl/praat/}{Download here}
+\end{itemize}
+
+\end{frame}
+
+\hypertarget{examples-of-coding-applications-for-speech-research}{%
+\section{Examples of coding applications for speech
+research}\label{examples-of-coding-applications-for-speech-research}}
+
+\begin{frame}{1. Data preparation in }
+\protect\hypertarget{data-preparation-in}{}
+
+\textbf{Example: Starbucks data}
+
+\begin{enumerate}
+\tightlist
+\item
+  Start with a data set you have in Excel
+\item
+  ``Read'' it into R
+\item
+  Do things to it like\ldots{}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Instantly calculate means values
+\end{itemize}
+
+\textbf{Let's look together}
+
+\end{frame}
+
+\begin{frame}{1. Data preparation: Raw data}
+\protect\hypertarget{data-preparation-raw-data}{}
+
+\end{frame}
+
+\begin{frame}[fragile]{1. Data preparation: Data prep script}
+\protect\hypertarget{data-preparation-data-prep-script}{}
+
+\texttt{1\_prep\_data.R}
+
+\begin{verbatim}
+###################################################
+# Helper script for analyzing Starbucks drink data
+###################################################
+
+# Setup ----
+
+# Load packages that contain functions we will use
+library(tidyverse)
+library(plyr)
+
+# Load data ----
+starbucks <- read.csv("1_materials/starbucks_drinkMenu_expanded.csv")
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{1. Data preparation: Data prep script
+(Continued)}
+\protect\hypertarget{data-preparation-data-prep-script-continued}{}
+
+\texttt{1\_prep\_data.R}
+
+\begin{verbatim}
+# Create new columns ----
+# Create a "caffeine" column that is numeric
+starbucks <- starbucks %>%
+        mutate(caffeine = revalue(caffeine,replace = c(
+                                  "varies" = NA, "Varies" = NA)),
+               caffeine_num = as.numeric(as.character(caffeine)))
+
+# Is caffeine content over 100 mg? If so, label it "YES", otherwise, "NO"
+starbucks <- starbucks %>%
+        mutate(too_much_caffeine = ifelse(caffeine_num > 100, "YES", "NO"))
+
+starbucks %>% select(caffeine_num, too_much_caffeine) %>% head()
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{2. Data visualization in }
+\protect\hypertarget{data-visualization-in}{}
+
+\texttt{2\_figures.R}
+
+\end{frame}
+
+\begin{frame}[fragile]{3. Writing in }
+\protect\hypertarget{writing-in}{}
+
+Using \texttt{R\ Markdown} to write:
+
+\begin{itemize}
+\tightlist
+\item
+  Notes \& reports
+\item
+  Papers, articles, theses
+\item
+  Presentations (like this one!)
+\item
+  Websites, blog posts!
+\end{itemize}
+
+\texttt{R\ Markdown} allows you to incorporate \emph{code} AND regular
+text using simple ``markdown'' syntax (more on that later).
+
+\end{frame}
+
+\begin{frame}{4. Automating repetitive tasks in }
+\protect\hypertarget{automating-repetitive-tasks-in}{}
+
+For example\ldots{}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/thealk/PraatScripts/blob/master/Editing_audio_stimuli/createTextGrid.praat}{Automatically
+  create TextGrids for all .wav files in a directory}
+\item
+  \href{https://github.com/thealk/PraatScripts/blob/master/Praat_scripting_tutorial/3_adjustBoundaries.praat}{Automatically
+  adjust Praat TextGrid boundaries for all files in a directory}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{5. Running experiments in }
+\protect\hypertarget{running-experiments-in}{}
+
+\href{https://theaknowles.com/post/measuring-speech-intelligibility-in-praat-part1/}{Intelligibility
+experiment in Praat}
+
+\end{frame}
+
+\hypertarget{intro-to-rstudio}{%
+\section{Intro to RStudio}\label{intro-to-rstudio}}
+
+\begin{frame}{RStudio layout}
+\protect\hypertarget{rstudio-layout}{}
+
+\end{frame}
+
+\begin{frame}{RStudio layout: Source pane}
+\protect\hypertarget{rstudio-layout-source-pane}{}
+
+This is where you'll edit and run your scripts.
+
+\end{frame}
+
+\begin{frame}{RStudio layout: Console pane}
+\protect\hypertarget{rstudio-layout-console-pane}{}
+
+This is where code, error messages, warnings, etc. show up when you run
+code
+
+\end{frame}
+
+\begin{frame}[fragile]{RStudio layout: Files/Environment pane}
+\protect\hypertarget{rstudio-layout-filesenvironment-pane}{}
+
+Here you can see\ldots{}
+
+\begin{enumerate}
+\tightlist
+\item
+  Files in your directory (``Files'')
+\item
+  \texttt{Variables} in your \texttt{environment} ("Environment)
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  This is anything you have created in R.
+\item
+  Saving your work to a script allows you to recreate these variables
+  again later.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{RStudio layout: Plots/Packages/Help/Viewer pane}
+\protect\hypertarget{rstudio-layout-plotspackageshelpviewer-pane}{}
+
+\begin{itemize}
+\tightlist
+\item
+  This is where plots you create will show up when you call them
+  (automatically in ``Plots'')
+\item
+  You can also\ldots{}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    search help documentation (``Help'')
+  \item
+    search for packages (``Packages'')
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Complete beginner?}
+\protect\hypertarget{complete-beginner}{}
+
+\begin{block}{Try this:}
+
+\begin{enumerate}
+\item
+  Sign up for an account on \url{udemy.com}
+\item
+  Sign up for the \href{https://www.udemy.com/r-basics/}{``R basics: R
+  programming language''} course on udemy
+\item
+  Watch videos 1, 2, 3, and 9.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  1 - R basics (3 min)
+\item
+  2 - A walkthrough of downloading R \& Rstudio (5 min)
+\item
+  3 - the Rstudio interface (19 min)
+\item
+  9 - Three common mistakes in R beginners (11 min)
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Topics for next time}
+\protect\hypertarget{topics-for-next-time}{}
+
+My thoughts: { Basic skill } + { fun skill } per meet up
+
+\begin{itemize}
+\tightlist
+\item
+  { Intro to R } + { Taking notes in R Markdown }
+\item
+  { Cleaning data } + { making boxplots }
+\item
+  { Making figures in R } + { Using emoji in R }
+\end{itemize}
+
+\emph{Break up into small groups for a couple of minutes to discuss what
+you would like to see at this group}
+
+\end{frame}
+
+\begin{frame}{Schedule for the rest of the term}
+\protect\hypertarget{schedule-for-the-rest-of-the-term}{}
+
+\begin{longtable}[]{@{}rrrr@{}}
+\toprule
+Date & Time & Location & Topic\tabularnewline
+\midrule
+\endhead
+2/25 & 4pm & Cary Hall 42 & Intro to group + RStudio\tabularnewline
+3/10 & 4pm & TBD & TBD\tabularnewline
+3/24 & 4pm & TBD & TBD\tabularnewline
+4/7 & 4pm & TBD & TBD\tabularnewline
+4/21 & 4pm & TBD & TBD\tabularnewline
+5/5 & 4pm & TBD & TBD\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{frame}
+
+\end{document}

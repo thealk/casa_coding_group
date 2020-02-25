@@ -1,0 +1,14 @@
+# Topic 1: Intro to CASA Coding Group {#topic1}
+Date: 25/02/2020
+
+This meet up will mostly serve as a means to chat logistics. We will also use this opportunity to install R, RStudio, and Praat. We will take a look at RStudio.
+
+
+**Options for viewing:** 
+
+- [Open slides for today in new window](presentations/1_Intro.html)
+- [Download PDF of slides for today](presentations/1_Intro.pdf)
+- View slides in situ (see below)
+
+`r knitr::include_app("presentations/1_Intro.html", height = "800px")`
+

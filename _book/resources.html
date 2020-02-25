@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Resources | CASA Lab Coding for Speech Group</title>
   <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
-  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Resources | CASA Lab Coding for Speech Group" />
   <meta property="og:type" content="book" />
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="workbook.html">
+<link rel="prev" href="topic-1-intro-to-casa-coding-group.html"/>
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -69,8 +72,11 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a></li>
-<li class="chapter" data-level="" data-path="workbook.html"><a href="workbook.html"><i class="fa fa-check"></i>Workbook</a></li>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a><ul>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#topic-abstracts"><i class="fa fa-check"></i>Topic abstracts</a></li>
+</ul></li>
+<li class="part"><span><b>Workbook Topics</b></span></li>
+<li class="chapter" data-level="1" data-path="topic-1-intro-to-casa-coding-group.html"><a href="topic-1-intro-to-casa-coding-group.html"><i class="fa fa-check"></i><b>1</b> Topic 1: Intro to CASA Coding Group</a></li>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -99,7 +105,7 @@
 <li><a href="https://tinystats.github.io/teacups-giraffes-and-statistics/index.html">Teacup Giraffes</a>: Intro modules to statistics with R</li>
 <li><a href="https://rladiessydney.org/courses/ryouwithme/">“R you with me?”</a>: A series of online learning resources for beginner R users designed by <a href="https://rladiessydney.org/">R-Ladies Sydney</a></li>
 </ul>
-<p>There will also be content-specific resources posted at the end of each <a href="workbook.html#workbook">workshop</a>.</p>
+<p>There will also be content-specific resources posted at the end of each [workshop][Workbook].</p>
 <!-- Check out [our resources][Workshops] -->
 <!-- Note I linked to the section header text -->
 
@@ -109,17 +115,19 @@
           </div>
         </div>
       </div>
-<a href="workbook.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="topic-1-intro-to-casa-coding-group.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -127,12 +135,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -144,6 +151,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
