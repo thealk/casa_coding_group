@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Workshops | CASA Lab Coding for Speech Group</title>
   <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
-  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Workshops | CASA Lab Coding for Speech Group" />
   <meta property="og:type" content="book" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="resources.html">
-
+<link rel="prev" href="topic-1-intro-to-casa-coding-group.html"/>
+<link rel="next" href="resources-1.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -65,13 +68,31 @@
 <li><a href="./">CASA Lab Coding Group</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="workshops.html"><a href="workshops.html"><i class="fa fa-check"></i>Workshops</a></li>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a>
+<ul>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#schedule"><i class="fa fa-check"></i>Schedule</a></li>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#topic-abstracts"><i class="fa fa-check"></i>Topic abstracts</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-workbook-topics.html"><a href="part-workbook-topics.html"><i class="fa fa-check"></i>(PART*) Workbook Topics</a></li>
+<li class="chapter" data-level="1" data-path="topic-1-intro-to-casa-coding-group.html"><a href="topic-1-intro-to-casa-coding-group.html"><i class="fa fa-check"></i><b>1</b> Topic 1: Intro to CASA Coding Group</a></li>
+<li class="chapter" data-level="" data-path="workshops.html"><a href="workshops.html"><i class="fa fa-check"></i>Workshops</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="workshops.html"><a href="workshops.html#rmarkdown"><i class="fa fa-check"></i><b>1.1</b> Documenting your learning in R with R Markdown</a>
+<ul>
+<li class="chapter" data-level="" data-path="workshops.html"><a href="workshops.html#markdown"><i class="fa fa-check"></i>Markdown</a></li>
+<li class="chapter" data-level="" data-path="workshops.html"><a href="workshops.html#code-chunks"><i class="fa fa-check"></i>Code chunks</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="workshops.html"><a href="workshops.html#more-advanced"><i class="fa fa-check"></i><b>1.2</b> More advanced</a>
+<ul>
+<li class="chapter" data-level="" data-path="workshops.html"><a href="workshops.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="resources-1.html"><a href="resources-1.html"><i class="fa fa-check"></i>Resources</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -92,27 +113,82 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="workshops" class="section level1 unnumbered">
-<h1>Workshops</h1>
-<p>This is where you will find a log of the exercises we work on.</p>
+<div id="workshops" class="section level1 unnumbered" number="">
+<h1 class="unnumbered" number="">Workshops</h1>
+<div id="rmarkdown" class="section level2" number="1.1">
+<h2 number="1.1"><span class="header-section-number">1.1</span> Documenting your learning in R with R Markdown</h2>
+<p>The goal of today’s workshop is to establish a workflow for using the <a href="https://rmarkdown.rstudio.com/"><code>rmarkdown</code></a> package to “knit” together R code and text to create summary documents.</p>
+<p>It might seem kind of odd to launch into a workflow that ties together R code <em>and other stuff</em> before we’ve actually had a chance to learn any R code, but here’s the rationale:</p>
+<ol style="list-style-type: decimal">
+<li>🛠 <strong>Foundational skill:</strong> R Markdown document creations can serve as a way to document the rest of our skills. At each workshop, we’ll create another R Markdown document (extension .<code>Rmd</code>) to log the skills we worked on and any notes you’d like to keep for yourself. In this way, this skill is <em>foundational</em>.</li>
+<li>🙌 <strong>Instant gratification!</strong> R Markdown documents can be rendered without much working knowledge of R at all. It’s a lovely thing when you can get something up and running RIGHT AWAY</li>
+</ol>
+<div id="markdown" class="section level3 unnumbered" number="">
+<h3 class="unnumbered" number="">Markdown</h3>
+<p><strong>Markdown</strong> refers to a set of conventions for editing plain text. With markdown syntax, you write as you normally would in a text editor or word processor, but you signal text formatting with certain characters. Markdown (which is distinguished from <em>markUP</em> language) is designed to be <strong>easily readable, easy to write, and easy to learn</strong>.</p>
+<pre><code>*italic*
+**bold**
+**italic and bold!***
 
+# First level header
+## Second level header
+### Third level header
+
+1. the first item on a numbered list
+2. the second item on a numbered list
+
+- the first item on a bulleted list
+- the second item on a bulleted list
+  - item 2a
+  
+Tables look like this: 
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell</code></pre>
+</div>
+<div id="code-chunks" class="section level3 unnumbered" number="">
+<h3 class="unnumbered" number="">Code chunks</h3>
+</div>
+</div>
+<div id="more-advanced" class="section level2" number="1.2">
+<h2 number="1.2"><span class="header-section-number">1.2</span> More advanced</h2>
+<ul>
+<li>inline R code</li>
+<li></li>
+</ul>
+<div id="resources" class="section level3 unnumbered" number="">
+<h3 class="unnumbered" number="">Resources</h3>
+<ul>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">RMarkdown: The definitive guide</a></li>
+<li><a href="https://r4ds.had.co.nz/r-markdown.html">R for data science: R Markdown</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">RMarkdown cheat sheet</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">RMarkdown reference guide from RStudio</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">RMarkdown Cheatsheet from RStudio</a></li>
+</ul>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="resources.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="topic-1-intro-to-casa-coding-group.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="resources-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -120,12 +196,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -137,6 +212,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

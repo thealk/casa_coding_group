@@ -1,7 +1,7 @@
 # Resources {-}
 
-
-- [R for Data Science](https://r4ds.had.co.nz/)
+- [RStudio's recommended beginner R links](https://education.rstudio.com/learn/beginner/): Lots of tutorials, suggestions, and cheat sheets!
+- [R for Data Science](https://r4ds.had.co.nz/): THE book on learning R.
 - [Teacup Giraffes](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html): Intro modules to statistics with R
 - ["R you with me?"](https://rladiessydney.org/courses/ryouwithme/): A series of online learning resources for beginner R users designed by [R-Ladies Sydney](https://rladiessydney.org/)
 

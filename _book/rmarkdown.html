@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Topic 2: R and R Markdown | CASA Lab Coding for Speech Group</title>
+  <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
+  <meta name="generator" content="bookdown 0.18.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Topic 2: R and R Markdown | CASA Lab Coding for Speech Group" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Topic 2: R and R Markdown | CASA Lab Coding for Speech Group" />
+  
+  <meta name="twitter:description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
+  
+
+<meta name="author" content="Director: Thea Knowles, PhD" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="topic-1-intro-to-casa-coding-group.html"/>
+<link rel="next" href="resources-1.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CASA Lab Coding Group</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a>
+<ul>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#schedule"><i class="fa fa-check"></i>Schedule</a></li>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#topic-abstracts"><i class="fa fa-check"></i>Topic abstracts</a></li>
+</ul></li>
+<li class="part"><span><b>Workbook Topics</b></span></li>
+<li class="chapter" data-level="1" data-path="topic-1-intro-to-casa-coding-group.html"><a href="topic-1-intro-to-casa-coding-group.html"><i class="fa fa-check"></i><b>1</b> Topic 1: Intro to CASA Coding Group</a></li>
+<li class="chapter" data-level="2" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>2</b> Topic 2: R and R Markdown</a>
+<ul>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="2.1" data-path="rmarkdown.html"><a href="rmarkdown.html#dont-worry"><i class="fa fa-check"></i><b>2.1</b> Don’t worry</a></li>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#recap-console-and-script-panes-in-rstudio"><i class="fa fa-check"></i>Recap: Console and script panes in RStudio</a></li>
+<li class="chapter" data-level="2.2" data-path="rmarkdown.html"><a href="rmarkdown.html#objects-in-r"><i class="fa fa-check"></i><b>2.2</b> Objects in R</a></li>
+<li class="chapter" data-level="2.3" data-path="rmarkdown.html"><a href="rmarkdown.html#variables"><i class="fa fa-check"></i><b>2.3</b> Variables</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="rmarkdown.html"><a href="rmarkdown.html#variable-assignment"><i class="fa fa-check"></i><b>2.3.1</b> Variable assignment</a></li>
+<li class="chapter" data-level="2.3.2" data-path="rmarkdown.html"><a href="rmarkdown.html#what-do-i-name-my-variables"><i class="fa fa-check"></i><b>2.3.2</b> What do I name my variables?</a></li>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#best-practices-in-naming-your-variables"><i class="fa fa-check"></i>Best practices in naming your variables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="rmarkdown.html"><a href="rmarkdown.html#try-it"><i class="fa fa-check"></i><b>2.3.3</b> Try it!</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="rmarkdown.html"><a href="rmarkdown.html#types-of-data"><i class="fa fa-check"></i><b>2.4</b> Types of data</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="rmarkdown.html"><a href="rmarkdown.html#types-of-data-structures"><i class="fa fa-check"></i><b>2.4.1</b> Types of data structures</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="rmarkdown.html"><a href="rmarkdown.html#comments"><i class="fa fa-check"></i><b>2.5</b> Comments</a></li>
+<li class="chapter" data-level="2.6" data-path="rmarkdown.html"><a href="rmarkdown.html#r-packages-libraries"><i class="fa fa-check"></i><b>2.6</b> R Packages &amp; Libraries</a></li>
+<li class="chapter" data-level="2.7" data-path="rmarkdown.html"><a href="rmarkdown.html#libraries"><i class="fa fa-check"></i><b>2.7</b> Libraries</a></li>
+<li class="chapter" data-level="2.8" data-path="rmarkdown.html"><a href="rmarkdown.html#functions"><i class="fa fa-check"></i><b>2.8</b> Functions</a></li>
+<li class="chapter" data-level="2.9" data-path="rmarkdown.html"><a href="rmarkdown.html#tidyverse"><i class="fa fa-check"></i><b>2.9</b> Tidyverse</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="rmarkdown.html"><a href="rmarkdown.html#disclaimer"><i class="fa fa-check"></i><b>2.9.1</b> Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="rmarkdown.html"><a href="rmarkdown.html#getting-started-r-projects"><i class="fa fa-check"></i><b>2.10</b> Getting started: R Projects</a></li>
+<li class="chapter" data-level="2.11" data-path="rmarkdown.html"><a href="rmarkdown.html#application"><i class="fa fa-check"></i><b>2.11</b> Application</a></li>
+<li class="chapter" data-level="2.12" data-path="rmarkdown.html"><a href="rmarkdown.html#rmarkdown-1"><i class="fa fa-check"></i><b>2.12</b> Rmarkdown</a>
+<ul>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#markdown"><i class="fa fa-check"></i>Markdown</a></li>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#code-chunks"><i class="fa fa-check"></i>Code chunks</a></li>
+</ul></li>
+<li class="chapter" data-level="2.13" data-path="rmarkdown.html"><a href="rmarkdown.html#more-advanced"><i class="fa fa-check"></i><b>2.13</b> More advanced</a>
+<ul>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="resources-1.html"><a href="resources-1.html"><i class="fa fa-check"></i>Resources</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CASA Lab Coding for Speech Group</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="rmarkdown" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Topic 2: R and R Markdown</h1>
+<div id="overview" class="section level2 unnumbered" number="">
+<h2>Overview</h2>
+<p>Goals:
+- Learn the basics of the R programming language
+- Learn the basics of Markdown writing
+- Learn how to combine R code and markdown text to create RMarkdown documents</p>
+<p>Outcomes:
+- TBD
+- Create RMarkdown summary document of things we learned today!</p>
+</div>
+<div id="dont-worry" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Don’t worry</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+The funniest thing about this is that the time scale could be one day or the past 5 years.
+</p>
+— C.B. Standelmore (<span class="citation">(<span class="citeproc-not-found" data-reference-id="bankingonbardo"><strong>???</strong></span>)</span>) <a href="https://twitter.com/bankingonbardo/status/1202267486726410240?ref_src=twsrc%5Etfw">December 4, 2019</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><em>p.s. <a href="https://github.com/allisonhorst/stats-illustrations">Allison Horst’s R illustrations are amaaaazing</a> and I will be using them throughout.</em></p>
+</div>
+<div id="recap-console-and-script-panes-in-rstudio" class="section level2 unnumbered" number="">
+<h2>Recap: Console and script panes in RStudio</h2>
+</div>
+<div id="objects-in-r" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Objects in R</h2>
+<p>Everything in R is an “object”</p>
+</div>
+<div id="variables" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Variables</h2>
+<p><strong>variable</strong>: a symbol that stores/represents some other <em>value</em> or set of values.</p>
+<p>Think of variables as containers.</p>
+<p><img src="img/find_x.jpg" /></p>
+<div id="variable-assignment" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Variable assignment</h3>
+<p>Variables get <strong>assigned</strong> their value in R with a left arrow <code>&lt;-</code></p>
+<ul>
+<li>Numeric variables represent numbers</li>
+</ul>
+<blockquote>
+<p>x &lt;- 5</p>
+</blockquote>
+<ul>
+<li><p>This means the value of the variable we have named <code>x</code> is equal to 5.</p></li>
+<li><p>String variables represent “strings” of text. Text has to be enclosed in quotes <code>""</code></p></li>
+</ul>
+<blockquote>
+<p>my_var &lt;- “hello”</p>
+</blockquote>
+<ul>
+<li>This means the value of the variable <code>my_var</code> is equal to the text “hello”.</li>
+</ul>
+</div>
+<div id="what-do-i-name-my-variables" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> What do I name my variables?</h3>
+<ul>
+<li>In R, it’s pretty flexible. Not as flexible in other languages (<em>*cough* Praat *cough*</em>)</li>
+</ul>
+<p><strong>General rules:</strong></p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Not allowed</th>
+<th align="right">Why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1abc</td>
+<td align="right">Starts with a number</td>
+</tr>
+<tr class="even">
+<td align="right">intelligibility%</td>
+<td align="right">Contains a special character like !@#$%^&amp;*, etc.</td>
+</tr>
+<tr class="odd">
+<td align="right">.1my_var</td>
+<td align="right">Starts with a period followed by a number (.1</td>
+</tr>
+<tr class="even">
+<td align="right">_my_var</td>
+<td align="right">Starts with an underscore (_)</td>
+</tr>
+<tr class="odd">
+<td align="right">special characters</td>
+<td align="right">Some words have special meaning to R and you shouldn’t overwrite them (e.g., “mean”)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="best-practices-in-naming-your-variables" class="section level3 unnumbered" number="">
+<h3>Best practices in naming your variables</h3>
+<p><em>Some suggestions</em></p>
+<p>Try your best to…</p>
+<ul>
+<li>Be descriptive</li>
+<li>Be consistent in your content</li>
+<li>Be consistent in your case (camel/snake/etc)</li>
+<li><a href="http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf">Jenny Bryan’s “Naming Things” slides</a> (applies more to filenames…)</li>
+</ul>
+<center>
+<a href="https://github.com/allisonhorst/stats-illustrations"><img src="img/horst_coding_cases.png" alt="Allison Horst" /></a>
+</center>
+<table>
+<colgroup>
+<col width="29%" />
+<col width="40%" />
+<col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Allowed</th>
+<th align="right">Good because</th>
+<th align="right">Bad because</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">x</td>
+<td align="right">short, lowercase</td>
+<td align="right">Not meaningful</td>
+</tr>
+<tr class="even">
+<td align="right">intelligibility_scores</td>
+<td align="right">meaningful, easy to remember</td>
+<td align="right">Takes a long time to type</td>
+</tr>
+<tr class="odd">
+<td align="right">int_mean</td>
+<td align="right">meaningful, short</td>
+<td align="right">🤷</td>
+</tr>
+<tr class="even">
+<td align="right">int_mean_pd, int_mean_hc</td>
+<td align="right">meaningful, shortish, descriptive</td>
+<td align="right">A bit long</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="try-it" class="section level3" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Try it!</h3>
+<div id="numeric-variables" class="section level4" number="2.3.3.1">
+<h4><span class="header-section-number">2.3.3.1</span> Numeric variables</h4>
+<p>In your console, do the following:</p>
+<ul>
+<li>Create a variable x and assign it a value of some number</li>
+<li>Create a variable of y and assign it a value of some other number</li>
+<li>Create some other variable (name it whatever you like!) and assign it a value of yet another number</li>
+</ul>
+</div>
+<div id="string-variables" class="section level4" number="2.3.3.2">
+<h4><span class="header-section-number">2.3.3.2</span> String variables</h4>
+<p>In your console, do the following:</p>
+<ul>
+<li>Create a variable <code>a</code> and assign it a value of some text (don’t forget to enclose the text in quotes!)</li>
+<li>Create a variable <code>b</code> and assign it a value of some other text</li>
+<li>Create a variable with another name and assign it yet another text value</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="types-of-data" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Types of data</h2>
+<ol style="list-style-type: decimal">
+<li>Numeric</li>
+</ol>
+<ul>
+<li>Integers (whole numbers)</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Strings: collection of characters</li>
+</ol>
+<ul>
+<li>e.g., “abc”, “the rainbow is a division of white light”</li>
+<li>numbers and other non-letter characters can also be treated as strings</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Factors: categorical variables. Make up a finite set</li>
+</ol>
+<ul>
+<li>e.g., “Blue” “Green” “Red”</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Logicals: special kind of factor that only has two values</li>
+</ol>
+<ul>
+<li>TRUE vs FALSE, 0 vs 1</li>
+</ul>
+<div id="types-of-data-structures" class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Types of data structures</h3>
+<ol style="list-style-type: decimal">
+<li><strong>Data frames</strong>: collections of vectors</li>
+<li><strong>Vectors</strong>: collection of similar elements (numbers, characters, factors, etc..)</li>
+<li>Matrices</li>
+<li>Lists</li>
+<li>Arrays</li>
+</ol>
+</div>
+</div>
+<div id="comments" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Comments</h2>
+<ul>
+<li>In R code, any line of code preceded by a hashmark (#) is not <em>evaluated</em> (i.e., it’s ignored)</li>
+<li>You can write notes to your future self this way</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="rmarkdown.html#cb1-1"></a><span class="co"># Set x equal to 0</span></span>
+<span id="cb1-2"><a href="rmarkdown.html#cb1-2"></a>x &lt;-<span class="st"> </span><span class="dv">0</span></span>
+<span id="cb1-3"><a href="rmarkdown.html#cb1-3"></a><span class="co"># Now add 1 to the value of x</span></span>
+<span id="cb1-4"><a href="rmarkdown.html#cb1-4"></a>y &lt;-<span class="st"> </span>x<span class="op">+</span><span class="dv">1</span></span></code></pre></div>
+</div>
+<div id="r-packages-libraries" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> R Packages &amp; Libraries</h2>
+<p><strong>Packages</strong> are bundles of code written to do (typically) specific sets of functions</p>
+<ul>
+<li>Some packages are automatically downloaded and loaded into your workspace when you install R</li>
+<li>Others you have to explicitly download</li>
+<li>Many packages are hosted on CRAN - this is the official “home” of peer-approved packages
+<ul>
+<li>These can be installed using the function <code>install.packages()</code>.</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="rmarkdown.html#cb2-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<ul>
+<li>Other packages are not hosted on CRAN - many of these are excellent, but some may be less reliable.
+<ul>
+<li>Many of these are hosted on GitHub.com</li>
+<li>These usually have to be installed using a function <code>install_github()</code> which is part of the <code>devtools</code> package.</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="rmarkdown.html#cb3-1"></a><span class="co"># install.packages(&quot;devtools&quot;)</span></span>
+<span id="cb3-2"><a href="rmarkdown.html#cb3-2"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;hadley/emo&quot;</span>)</span></code></pre></div>
+<p>For example: To install the <code>emo</code> package from Hadley Wickham’s Github page:</p>
+<ul>
+<li><a href="">https://github.com/hadley/emo</a></li>
+</ul>
+<p><img src="img/install_emo.png" /></p>
+</div>
+<div id="libraries" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> Libraries</h2>
+<ul>
+<li>Libraries in R refer to where the packages are stored. When you install a new package, it gets automatically saved to a particular location (you don’t need to specify where). When you want to <em>use</em> the contents/functions of a package, you need to “load the library” using the <code>library()</code> function.</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="rmarkdown.html#cb4-1"></a><span class="co"># load the tidyverse package</span></span>
+<span id="cb4-2"><a href="rmarkdown.html#cb4-2"></a><span class="co"># expect a bunch of output messages (this is normal)</span></span>
+<span id="cb4-3"><a href="rmarkdown.html#cb4-3"></a><span class="kw">library</span>(tidyverse) </span></code></pre></div>
+<ul>
+<li>If you ask R to load a package you don’t have installed, or make a typo in the package name, R will yell at you (give you an <em>error</em>):</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="rmarkdown.html#cb5-1"></a><span class="co"># Typo! what happens? R yells at you.</span></span>
+<span id="cb5-2"><a href="rmarkdown.html#cb5-2"></a><span class="kw">library</span>(tidverse)</span></code></pre></div>
+<pre><code>## Error in library(tidverse): there is no package called &#39;tidverse&#39;</code></pre>
+</div>
+<div id="functions" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> Functions</h2>
+<p><strong>Functions</strong>: A certain named format of code that outlines a procedure. Often this allows several lines of code to be executed with a single line of code (by using the name of the function)</p>
+<ul>
+<li>In other words, functions are <strong>actions</strong>.</li>
+<li>Most functions take <strong>arguments</strong>
+<ul>
+<li>What do you want to act on?</li>
+</ul></li>
+</ul>
+</div>
+<div id="tidyverse" class="section level2" number="2.9">
+<h2><span class="header-section-number">2.9</span> Tidyverse</h2>
+<blockquote>
+<p>“The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.”
+<a href="">www.tidyverse.org</a></p>
+</blockquote>
+<ul>
+<li>Changed the game of R coding</li>
+<li>Much more intuitive syntax (IMHO); more “english-like”</li>
+<li>Core packages: ggplot2, dplyr, tidyr, readr, stringr…</li>
+</ul>
+<div id="disclaimer" class="section level3" number="2.9.1">
+<h3><span class="header-section-number">2.9.1</span> Disclaimer</h3>
+<ul>
+<li>We will cover both base R and the Tidyverse</li>
+</ul>
+</div>
+</div>
+<div id="getting-started-r-projects" class="section level2" number="2.10">
+<h2><span class="header-section-number">2.10</span> Getting started: R Projects</h2>
+</div>
+<div id="application" class="section level2" number="2.11">
+<h2><span class="header-section-number">2.11</span> Application</h2>
+<p>Open 1_prep_data.R from today’s materials.</p>
+</div>
+<div id="rmarkdown-1" class="section level2" number="2.12">
+<h2><span class="header-section-number">2.12</span> Rmarkdown</h2>
+<p><a href="https://github.com/allisonhorst/stats-illustrations"><img src="img/horst_rmarkdown_wizards.png" alt="Allison Horst" /></a></p>
+<p>The goal of today’s workshop is to establish a workflow for using the <a href="https://rmarkdown.rstudio.com/"><code>rmarkdown</code></a> package to “knit” together R code and text to create summary documents.</p>
+<p>It might seem kind of odd to launch into a workflow that ties together R code <em>and other stuff</em> before we’ve actually had a chance to learn any R code, but here’s the rationale:</p>
+<ol style="list-style-type: decimal">
+<li>🛠 <strong>Foundational skill:</strong> R Markdown document creations can serve as a way to document the rest of our skills. At each workshop, we’ll create another R Markdown document (extension .<code>Rmd</code>) to log the skills we worked on and any notes you’d like to keep for yourself. In this way, this skill is <em>foundational</em>.</li>
+<li>🙌 <strong>Instant gratification!</strong> R Markdown documents can be rendered without much working knowledge of R at all. It’s a lovely thing when you can get something up and running RIGHT AWAY</li>
+</ol>
+<div id="markdown" class="section level3 unnumbered" number="">
+<h3>Markdown</h3>
+<p><strong>Markdown</strong> refers to a set of conventions for editing plain text. With markdown syntax, you write as you normally would in a text editor or word processor, but you signal text formatting with certain characters. Markdown (which is distinguished from <em>markUP</em> language) is designed to be <strong>easily readable, easy to write, and easy to learn</strong>.</p>
+<pre><code>*italic*
+**bold**
+**italic and bold!***
+
+# First level header
+## Second level header
+### Third level header
+
+1. the first item on a numbered list
+2. the second item on a numbered list
+
+- the first item on a bulleted list
+- the second item on a bulleted list
+  - item 2a
+  
+Tables look like this: 
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell</code></pre>
+</div>
+<div id="code-chunks" class="section level3 unnumbered" number="">
+<h3>Code chunks</h3>
+</div>
+</div>
+<div id="more-advanced" class="section level2" number="2.13">
+<h2><span class="header-section-number">2.13</span> More advanced</h2>
+<ul>
+<li>inline R code</li>
+<li></li>
+</ul>
+<div id="resources" class="section level3 unnumbered" number="">
+<h3>Resources</h3>
+<ul>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">RMarkdown: The definitive guide</a></li>
+<li><a href="https://r4ds.had.co.nz/r-markdown.html">R for data science: R Markdown</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">RMarkdown cheat sheet</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">RMarkdown reference guide from RStudio</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">RMarkdown Cheatsheet from RStudio</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="topic-1-intro-to-casa-coding-group.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="resources-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["casa_coding_group.pdf", "casa_coding_group.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
