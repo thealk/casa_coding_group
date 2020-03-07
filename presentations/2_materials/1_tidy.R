@@ -2,7 +2,7 @@
 
 # Load packages ----
 # First install these packages (you'll only need to do this once)
-install.packages(c("tidyverse","devtools"))
+# install.packages(c("tidyverse","devtools"))
 
 # Then load the packages. You have to load packages you want to use every time you start R.
 library(tidyverse)

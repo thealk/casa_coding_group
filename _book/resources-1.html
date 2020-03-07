@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Resources | CASA Lab Coding for Speech Group</title>
   <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
-  <meta name="generator" content="bookdown 0.18.1 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Resources | CASA Lab Coding for Speech Group" />
   <meta property="og:type" content="book" />
@@ -32,7 +32,6 @@
   
 <link rel="prev" href="rmarkdown.html"/>
 
-<script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -53,26 +52,25 @@
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -81,9 +79,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -132,38 +130,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">CASA Lab Coding Group</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
-<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a>
-<ul>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a><ul>
 <li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#schedule"><i class="fa fa-check"></i>Schedule</a></li>
 <li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#topic-abstracts"><i class="fa fa-check"></i>Topic abstracts</a></li>
 </ul></li>
 <li class="part"><span><b>Workbook Topics</b></span></li>
 <li class="chapter" data-level="1" data-path="topic-1-intro-to-casa-coding-group.html"><a href="topic-1-intro-to-casa-coding-group.html"><i class="fa fa-check"></i><b>1</b> Topic 1: Intro to CASA Coding Group</a></li>
-<li class="chapter" data-level="2" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>2</b> Topic 2: R and R Markdown</a>
-<ul>
+<li class="chapter" data-level="2" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>2</b> Topic 2: R and R Markdown</a><ul>
 <li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#overview"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="2.1" data-path="rmarkdown.html"><a href="rmarkdown.html#dont-worry"><i class="fa fa-check"></i><b>2.1</b> Don’t worry</a></li>
 <li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#recap-console-and-script-panes-in-rstudio"><i class="fa fa-check"></i>Recap: Console and script panes in RStudio</a></li>
-<li class="chapter" data-level="2.2" data-path="rmarkdown.html"><a href="rmarkdown.html#variables"><i class="fa fa-check"></i><b>2.2</b> Variables</a>
-<ul>
-<li class="chapter" data-level="2.2.1" data-path="rmarkdown.html"><a href="rmarkdown.html#variable-assignment"><i class="fa fa-check"></i><b>2.2.1</b> Variable assignment</a></li>
-<li class="chapter" data-level="2.2.2" data-path="rmarkdown.html"><a href="rmarkdown.html#what-do-i-name-my-variables"><i class="fa fa-check"></i><b>2.2.2</b> What do I name my variables?</a></li>
+<li class="chapter" data-level="2.2" data-path="rmarkdown.html"><a href="rmarkdown.html#objects-in-r"><i class="fa fa-check"></i><b>2.2</b> Objects in R</a></li>
+<li class="chapter" data-level="2.3" data-path="rmarkdown.html"><a href="rmarkdown.html#variables"><i class="fa fa-check"></i><b>2.3</b> Variables</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="rmarkdown.html"><a href="rmarkdown.html#variable-assignment"><i class="fa fa-check"></i><b>2.3.1</b> Variable assignment</a></li>
+<li class="chapter" data-level="2.3.2" data-path="rmarkdown.html"><a href="rmarkdown.html#what-do-i-name-my-variables"><i class="fa fa-check"></i><b>2.3.2</b> What do I name my variables?</a></li>
 <li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#best-practices-in-naming-your-variables"><i class="fa fa-check"></i>Best practices in naming your variables</a></li>
-<li class="chapter" data-level="2.2.3" data-path="rmarkdown.html"><a href="rmarkdown.html#what-can-i-do-with-variables"><i class="fa fa-check"></i><b>2.2.3</b> What can I do with variables?</a></li>
-<li class="chapter" data-level="2.2.4" data-path="rmarkdown.html"><a href="rmarkdown.html#try-it"><i class="fa fa-check"></i><b>2.2.4</b> Try it!</a></li>
+<li class="chapter" data-level="2.3.3" data-path="rmarkdown.html"><a href="rmarkdown.html#try-it"><i class="fa fa-check"></i><b>2.3.3</b> Try it!</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="rmarkdown.html"><a href="rmarkdown.html#rmarkdown-1"><i class="fa fa-check"></i><b>2.3</b> Rmarkdown</a>
-<ul>
+<li class="chapter" data-level="2.4" data-path="rmarkdown.html"><a href="rmarkdown.html#types-of-data"><i class="fa fa-check"></i><b>2.4</b> Types of data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="rmarkdown.html"><a href="rmarkdown.html#types-of-data-structures"><i class="fa fa-check"></i><b>2.4.1</b> Types of data structures</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="rmarkdown.html"><a href="rmarkdown.html#comments"><i class="fa fa-check"></i><b>2.5</b> Comments</a></li>
+<li class="chapter" data-level="2.6" data-path="rmarkdown.html"><a href="rmarkdown.html#r-packages-libraries"><i class="fa fa-check"></i><b>2.6</b> R Packages &amp; Libraries</a></li>
+<li class="chapter" data-level="2.7" data-path="rmarkdown.html"><a href="rmarkdown.html#libraries"><i class="fa fa-check"></i><b>2.7</b> Libraries</a></li>
+<li class="chapter" data-level="2.8" data-path="rmarkdown.html"><a href="rmarkdown.html#functions"><i class="fa fa-check"></i><b>2.8</b> Functions</a></li>
+<li class="chapter" data-level="2.9" data-path="rmarkdown.html"><a href="rmarkdown.html#tidyverse"><i class="fa fa-check"></i><b>2.9</b> Tidyverse</a><ul>
+<li class="chapter" data-level="2.9.1" data-path="rmarkdown.html"><a href="rmarkdown.html#disclaimer"><i class="fa fa-check"></i><b>2.9.1</b> Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="rmarkdown.html"><a href="rmarkdown.html#getting-started-r-projects"><i class="fa fa-check"></i><b>2.10</b> Getting started: R Projects</a></li>
+<li class="chapter" data-level="2.11" data-path="rmarkdown.html"><a href="rmarkdown.html#application"><i class="fa fa-check"></i><b>2.11</b> Application</a></li>
+<li class="chapter" data-level="2.12" data-path="rmarkdown.html"><a href="rmarkdown.html#rmarkdown-1"><i class="fa fa-check"></i><b>2.12</b> Rmarkdown</a><ul>
 <li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#markdown"><i class="fa fa-check"></i>Markdown</a></li>
 <li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#code-chunks"><i class="fa fa-check"></i>Code chunks</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="rmarkdown.html"><a href="rmarkdown.html#more-advanced"><i class="fa fa-check"></i><b>2.4</b> More advanced</a>
-<ul>
+<li class="chapter" data-level="2.13" data-path="rmarkdown.html"><a href="rmarkdown.html#more-advanced"><i class="fa fa-check"></i><b>2.13</b> More advanced</a><ul>
 <li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#resources"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
 </ul></li>
@@ -188,7 +192,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="resources-1" class="section level1 unnumbered" number="">
+<div id="resources-1" class="section level1 unnumbered">
 <h1>Resources</h1>
 <ul>
 <li><a href="https://education.rstudio.com/learn/beginner/">RStudio’s recommended beginner R links</a>: Lots of tutorials, suggestions, and cheat sheets!</li>

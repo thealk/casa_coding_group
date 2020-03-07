@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Topic 1: Intro to CASA Coding Group | CASA Lab Coding for Speech Group</title>
   <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
-  <meta name="generator" content="bookdown 0.18.1 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Topic 1: Intro to CASA Coding Group | CASA Lab Coding for Speech Group" />
   <meta property="og:type" content="book" />
@@ -31,8 +31,7 @@
   
   
 <link rel="prev" href="tentative-plan-schedule.html"/>
-<link rel="next" href="resources.html"/>
-<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<link rel="next" href="rmarkdown.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -52,6 +51,68 @@
 
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -69,19 +130,48 @@
 <li><a href="./">CASA Lab Coding Group</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
-<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a>
-<ul>
+<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a><ul>
 <li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#schedule"><i class="fa fa-check"></i>Schedule</a></li>
 <li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#topic-abstracts"><i class="fa fa-check"></i>Topic abstracts</a></li>
 </ul></li>
 <li class="part"><span><b>Workbook Topics</b></span></li>
 <li class="chapter" data-level="1" data-path="topic-1-intro-to-casa-coding-group.html"><a href="topic-1-intro-to-casa-coding-group.html"><i class="fa fa-check"></i><b>1</b> Topic 1: Intro to CASA Coding Group</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="2" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>2</b> Topic 2: R and R Markdown</a><ul>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="2.1" data-path="rmarkdown.html"><a href="rmarkdown.html#dont-worry"><i class="fa fa-check"></i><b>2.1</b> Don’t worry</a></li>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#recap-console-and-script-panes-in-rstudio"><i class="fa fa-check"></i>Recap: Console and script panes in RStudio</a></li>
+<li class="chapter" data-level="2.2" data-path="rmarkdown.html"><a href="rmarkdown.html#objects-in-r"><i class="fa fa-check"></i><b>2.2</b> Objects in R</a></li>
+<li class="chapter" data-level="2.3" data-path="rmarkdown.html"><a href="rmarkdown.html#variables"><i class="fa fa-check"></i><b>2.3</b> Variables</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="rmarkdown.html"><a href="rmarkdown.html#variable-assignment"><i class="fa fa-check"></i><b>2.3.1</b> Variable assignment</a></li>
+<li class="chapter" data-level="2.3.2" data-path="rmarkdown.html"><a href="rmarkdown.html#what-do-i-name-my-variables"><i class="fa fa-check"></i><b>2.3.2</b> What do I name my variables?</a></li>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#best-practices-in-naming-your-variables"><i class="fa fa-check"></i>Best practices in naming your variables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="rmarkdown.html"><a href="rmarkdown.html#try-it"><i class="fa fa-check"></i><b>2.3.3</b> Try it!</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="rmarkdown.html"><a href="rmarkdown.html#types-of-data"><i class="fa fa-check"></i><b>2.4</b> Types of data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="rmarkdown.html"><a href="rmarkdown.html#types-of-data-structures"><i class="fa fa-check"></i><b>2.4.1</b> Types of data structures</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="rmarkdown.html"><a href="rmarkdown.html#comments"><i class="fa fa-check"></i><b>2.5</b> Comments</a></li>
+<li class="chapter" data-level="2.6" data-path="rmarkdown.html"><a href="rmarkdown.html#r-packages-libraries"><i class="fa fa-check"></i><b>2.6</b> R Packages &amp; Libraries</a></li>
+<li class="chapter" data-level="2.7" data-path="rmarkdown.html"><a href="rmarkdown.html#libraries"><i class="fa fa-check"></i><b>2.7</b> Libraries</a></li>
+<li class="chapter" data-level="2.8" data-path="rmarkdown.html"><a href="rmarkdown.html#functions"><i class="fa fa-check"></i><b>2.8</b> Functions</a></li>
+<li class="chapter" data-level="2.9" data-path="rmarkdown.html"><a href="rmarkdown.html#tidyverse"><i class="fa fa-check"></i><b>2.9</b> Tidyverse</a><ul>
+<li class="chapter" data-level="2.9.1" data-path="rmarkdown.html"><a href="rmarkdown.html#disclaimer"><i class="fa fa-check"></i><b>2.9.1</b> Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="rmarkdown.html"><a href="rmarkdown.html#getting-started-r-projects"><i class="fa fa-check"></i><b>2.10</b> Getting started: R Projects</a></li>
+<li class="chapter" data-level="2.11" data-path="rmarkdown.html"><a href="rmarkdown.html#application"><i class="fa fa-check"></i><b>2.11</b> Application</a></li>
+<li class="chapter" data-level="2.12" data-path="rmarkdown.html"><a href="rmarkdown.html#rmarkdown-1"><i class="fa fa-check"></i><b>2.12</b> Rmarkdown</a><ul>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#markdown"><i class="fa fa-check"></i>Markdown</a></li>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#code-chunks"><i class="fa fa-check"></i>Code chunks</a></li>
+</ul></li>
+<li class="chapter" data-level="2.13" data-path="rmarkdown.html"><a href="rmarkdown.html#more-advanced"><i class="fa fa-check"></i><b>2.13</b> More advanced</a><ul>
+<li class="chapter" data-level="" data-path="rmarkdown.html"><a href="rmarkdown.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="resources-1.html"><a href="resources-1.html"><i class="fa fa-check"></i>Resources</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -102,7 +192,7 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="topic-1-intro-to-casa-coding-group" class="section level1" number="1">
+<div id="topic-1-intro-to-casa-coding-group" class="section level1">
 <h1><span class="header-section-number">1</span> Topic 1: Intro to CASA Coding Group</h1>
 <p>Date: 25/02/2020</p>
 <p>This meet up will mostly serve as a means to chat logistics. We will also use this opportunity to install R, RStudio, and Praat. We will take a look at RStudio.</p>
@@ -126,7 +216,7 @@
         </div>
       </div>
 <a href="tentative-plan-schedule.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="rmarkdown.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
