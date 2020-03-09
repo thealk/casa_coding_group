@@ -16,6 +16,7 @@ vot <- read.csv("presentations/2_materials/simulated_vot_data.csv")
 
 # OR USE SIMULATED VOT DATA FROM POLITZER-AHLES & PICCINIINI
 # https://osf.io/2n3mu/
+# Article: https://www.sciencedirect.com/science/article/pii/S0095447017301407#m0005
 
 # Explore data ----
 # Take a look at the data using head(), str(), and summary() functions

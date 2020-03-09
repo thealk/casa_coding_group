@@ -26,6 +26,8 @@ Outcomes:
 ## R
 ### Recap: Console and script panes in RStudio {-}
  
+
+ 
 ### Objects in R
 Everything in R is an "object"
 
