@@ -103,8 +103,37 @@ We're going to make this today!
 
 # Intro to <img src="../img/Rlogo.png" height=150/>
 
-## Objects in R
-Everything in R is an "object"
+## What can you do with R code?
+### Use it like a calculator
+```{r echo=TRUE}
+3 + 2
+10^4
+4*100
+```
+
+## What can you do with R code?
+### Print information to the console
+
+```{r echo=TRUE}
+print("Hello!")
+print(3*5)
+```
+
+## What can you do with R code?
+### Create new objects
+
+*Read the following as "x is equal to 5"*
+
+```{r echo = TRUE}
+x <- 5
+```
+
+*And we can now type x in the console to see its value*
+```{r echo=TRUE}
+x
+```
+
+x is now a **variable** that is set to the value of the number 5.
 
 ## Variables
 **Variable**: a symbol that stores/represents some other *value* or set of values.
@@ -119,17 +148,28 @@ Think of variables as containers.
 ## Variable assignment
 Variables get **assigned** their value in R with a left arrow `<-`
 
-- Numeric variables represent numbers
+**Numeric variables** represent numbers
+```{r}
+x <- 5
+```
 
-> x <- 5
+This means the value of the variable we have named `x` is equal to 5.
 
-- This means the value of the variable we have named `x` is equal to 5.
+**String variables** represent "strings" of text. Text has to be enclosed in quotes `""`
 
-- String variables represent "strings" of text. Text has to be enclosed in quotes `""`
+```{r}
+my_var <- "hello"
+```
 
-> my_var <- "hello"
+This means the value of the variable `my_var` is equal to the text "hello".
 
-- This means the value of the variable `my_var` is equal to the text "hello".
+## Variable assignment
+Variables don't just hold numbers and text - they can hold sets of numbers/text, lists of various kinds of information, and whole data sets!
+
+When you create a new variable in R, you will see it in your Environment pane.
+
+<img src = "../img/environment.png" width=300/>
+
 
 ## What do I name my variables?
 
@@ -143,7 +183,16 @@ Try your best to...
 - Be descriptive
 - Be consistent in your content
 - Be consistent in your case (camel/snake/etc)
-- [Jenny Bryan's "Naming Things" slides](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf) (applies more to filenames...)
+
+*i_like_snake_case* but some people *likeCamelCase* and others may *like-kabob-case*,
+
+## Variable names: Choose your case
+<center>
+<img src = "../img/horst_coding_cases.png" width=700/>
+<font size="3">
+[https://github.com/allisonhorst/stats-illustrations]()
+</font>
+</center>
 
 ## Variable names: Not okay
 
@@ -166,19 +215,16 @@ Try your best to...
 |                 int_mean |                 meaningful, short |      `r emo::ji("shrug")` |
 | int_mean_pd, int_mean_hc | meaningful, shortish, descriptive |                A bit long |
 
-## Variable names: Choose your case
-<center>
-<img src = "../img/horst_coding_cases.png" width=700/>
-<font size="3">
-[https://github.com/allisonhorst/stats-illustrations]()
-</font>
-</center>
 
+## Beware of typos!
+```{r error=TRUE}
+my_var <- 5
 
-## Tidy data
-- See https://github.com/rladies/meetup-presentations_auckland/blob/master/2017-12_tidyverse-6-auckland.pdf
+My_var
+myVar
+my_var
+```
 
-- "the pipe is syntactic sugar"
 
 ## But will I break it?
 
@@ -197,7 +243,6 @@ In your console, do the following:
 - Create a variable `a` and assign it a value of some text (don't forget to enclose the text in quotes!)
 - Create a variable `b` and assign it a value of some other text
 - Create a variable with another name and assign it yet another text value
-
 
 
 ## Types of data
@@ -282,6 +327,85 @@ library(tidverse)
 - Most functions take **arguments**
   - What do you want to act on?
 
+## Calling functions
+
+### function_name(argument1, argument2, ...)
+
+- In R Studio, if you start typing the name of a function and hit tab, you will get a pop up with possible options. 
+- Within the () of the function, pressing tab will help you add the arguments.
+
+<img src="../img/tab_completion.png" height=300/>
+
+## Looking at data: A spreadsheet perspective
+
+```{r echo=FALSE}
+my_data <- read.csv("../presentations/2_materials/simulated_vot_data.csv")
+```
+
+Most of us are used to looking at data in the form of a spreadsheet.
+
+- Named columns with many rows
+- Each row usually represents one observation
+
+*See simulated_vot_data.csv*
+
+## Looking at data: A spreadsheet perspective
+
+### My usual workflow: 
+
+- Collect data in spreadsheet
+- Load spreadsheet data into R
+- Do all other data manipulation and analyses in R
+
+## Looking at data
+### A spreadsheet perspective
+
+In R, data often are stored in `data_frames`. 
+
+Columns stored in variables named with the column header name
+
+To access individual columns, use the `$` operator
+
+```{r eval = FALSE}
+my_data$Participant
+```
+
+## Looking at data
+### Take a peak
+
+To peak at the first 6 rows of the data, use the `head()` function
+
+```{r}
+head(my_data)
+```
+
+
+## Looking at data
+### Subsetting
+
+We can also look at subsets of data
+
+```{r}
+subset(my_data, Condition=="Fast")
+```
+
+
+## Looking at data
+### Using the pipe `%>%` to combine functions
+
+```{r eval=FALSE}
+my_data %>%
+  first_do(args) %>%
+  then_do(args)
+```
+
+
+```{r}
+my_data %>%
+  subset(Condition=="Fast") %>%
+  head()
+```
+
 
 ## Tidyverse
 
@@ -292,8 +416,13 @@ library(tidverse)
 - Much more intuitive syntax (IMHO); more "english-like"
 - BUT not everyone likes it. Sometimes makes things easier, sometimes makes things more complicated.
 - We'll be using both
-- Core packages: ggplot2, dplyr, tidyr, readr, stringr...
+- Core packages of the tidyverse: ggplot2, dplyr, tidyr, readr, stringr...
 
+
+## Tidy data & the Tidyverse
+- See https://github.com/rladies/meetup-presentations_auckland/blob/master/2017-12_tidyverse-6-auckland.pdf
+
+- "the pipe is syntactic sugar"
 
 ## Disclaimer
 - We will cover both base R and the Tidyverse
@@ -306,6 +435,7 @@ Open 1_prep_data.R from today's materials.
 
 ## Rmarkdown
 [![Allison Horst](img/horst_rmarkdown_wizards.png)](https://github.com/allisonhorst/stats-illustrations)
+[RStudio's "What is R Markdown" Video](https://vimeo.com/178485416)
 
 The goal of today's workshop is to establish a workflow for using the [`rmarkdown`](https://rmarkdown.rstudio.com/) package to "knit" together R code and text to create summary documents.
 

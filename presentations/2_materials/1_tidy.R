@@ -2,19 +2,17 @@
 
 # Load packages ----
 # First install these packages (you'll only need to do this once)
-# install.packages(c("tidyverse","devtools"))
+# install.packages(c("tidyverse","remotes", "rmarkdown"))
 
 # Then load the packages. You have to load packages you want to use every time you start R.
 library(tidyverse)
-library(readxl)
 
 # Load data ----
-# Read in the data using the read_excel function from the readxl package
-vot <- read_excel("presentations/2_materials/casa_lab_vot_data.xlsx")
+# Read in the data using the read_csv function
 vot <- read.csv("presentations/2_materials/simulated_vot_data.csv")
 
 
-# OR USE SIMULATED VOT DATA FROM POLITZER-AHLES & PICCINIINI
+# Data: SIMULATED VOT DATA FROM POLITZER-AHLES & PICCINIINI 2018
 # https://osf.io/2n3mu/
 # Article: https://www.sciencedirect.com/science/article/pii/S0095447017301407#m0005
 
