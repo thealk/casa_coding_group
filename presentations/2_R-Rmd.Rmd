@@ -103,6 +103,51 @@ We're going to make this today!
 
 # Intro to <img src="../img/Rlogo.png" height=150/>
 
+## R Packages & Libraries
+**Packages** are bundles of code written to do (typically) specific sets of functions
+
+- Some packages are automatically downloaded and loaded into your workspace when you install R
+- Others you have to explicitly download
+- Many packages are hosted on CRAN - this is the official "home" of peer-approved packages
+  - These can be installed using the function `install.packages()`.
+
+```{r eval=FALSE}
+install.packages("tidyverse")
+```
+
+- Other packages are not hosted on CRAN - many of these are excellent, but some may be less reliable.
+  - Many of these are hosted on GitHub.com 
+  - These usually have to be installed using a function `install_github()` which is part of the `devtools` package.
+  
+```{r eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("hadley/emo")
+```
+
+
+For example: To install the `emo` package from Hadley Wickham's Github page: 
+
+- [https://github.com/hadley/emo]()
+
+![](img/install_emo.png)
+
+## Libraries
+- Libraries in R refer to where the packages are stored. When you install a new package, it gets automatically saved to a particular location (you don't need to specify where). When you want to *use* the contents/functions of a package, you need to "load the library" using the `library()` function.
+
+```{r message=TRUE}
+# load the tidyverse package
+# expect a bunch of output messages (this is normal)
+library(tidyverse) 
+```
+
+- If you ask R to load a package you don't have installed, or make a typo in the package name, R will yell at you (give you an *error*):
+
+```{r message=TRUE, warning=TRUE, error=TRUE}
+# Typo! what happens? R yells at you.
+library(tidverse)
+```
+
+
 ## What can you do with R code?
 ### Use it like a calculator
 ```{r echo=TRUE}
@@ -275,49 +320,6 @@ y <- x+1
 ```
 
 
-## R Packages & Libraries
-**Packages** are bundles of code written to do (typically) specific sets of functions
-
-- Some packages are automatically downloaded and loaded into your workspace when you install R
-- Others you have to explicitly download
-- Many packages are hosted on CRAN - this is the official "home" of peer-approved packages
-  - These can be installed using the function `install.packages()`.
-
-```{r eval=FALSE}
-install.packages("tidyverse")
-```
-
-- Other packages are not hosted on CRAN - many of these are excellent, but some may be less reliable.
-  - Many of these are hosted on GitHub.com 
-  - These usually have to be installed using a function `install_github()` which is part of the `devtools` package.
-  
-```{r eval=FALSE}
-# install.packages("devtools")
-devtools::install_github("hadley/emo")
-```
-
-
-For example: To install the `emo` package from Hadley Wickham's Github page: 
-
-- [https://github.com/hadley/emo]()
-
-![](img/install_emo.png)
-
-## Libraries
-- Libraries in R refer to where the packages are stored. When you install a new package, it gets automatically saved to a particular location (you don't need to specify where). When you want to *use* the contents/functions of a package, you need to "load the library" using the `library()` function.
-
-```{r message=TRUE}
-# load the tidyverse package
-# expect a bunch of output messages (this is normal)
-library(tidyverse) 
-```
-
-- If you ask R to load a package you don't have installed, or make a typo in the package name, R will yell at you (give you an *error*):
-
-```{r message=TRUE, warning=TRUE, error=TRUE}
-# Typo! what happens? R yells at you.
-library(tidverse)
-```
 
 
 ## Functions
@@ -483,6 +485,16 @@ Content Cell  | Content Cell
 - Google "how to use XX package in r"
 - Search Twitter (#rstats)
 
+
+## Schedule for the rest of the term
+|  Date|  Time|  Location| Topic|
+|--:|--:|--:|--:|
+|  2/25|  4pm|  Cary Hall 42| Intro to group + RStudio|
+|  3/10|  4pm|  Cary Hall 135| Intro to R + R Markdown|
+|  3/24|  4pm|  Cary Hall 135| Cleaning + manipulating data|
+|  4/7|  4pm|  Cary Hall 135| Data visualizations|
+|  4/21|  4pm|  Cary Hall 135| Praat?|
+|  5/5|  4pm|  Cary Hall 135| Praat?|
 
 ## Resources {-}
 - [Intro to RMarkdown: Video](https://www.youtube.com/watch?v=0yAIeykkRhw&feature=youtu.be) (12 minutes)
