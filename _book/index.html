@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CASA Lab Coding for Speech Group</title>
+  <title>UB Praat Scripting Workshops</title>
   <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
-  <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="CASA Lab Coding for Speech Group" />
+  <meta property="og:title" content="UB Praat Scripting Workshops" />
   <meta property="og:type" content="book" />
   
   
@@ -16,12 +16,11 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="CASA Lab Coding for Speech Group" />
+  <meta name="twitter:title" content="UB Praat Scripting Workshops" />
   
   <meta name="twitter:description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
   
 
-<meta name="author" content="Director: Thea Knowles, PhD" />
 
 
 
@@ -31,7 +30,8 @@
   
   
 
-<link rel="next" href="tentative-plan-schedule.html"/>
+<link rel="next" href="schedule.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 
@@ -68,18 +69,23 @@
 <li><a href="./">CASA Lab Coding Group</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#skills-you-may-expect-to-gain"><i class="fa fa-check"></i>Skills you may expect to gain</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a><ul>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#schedule"><i class="fa fa-check"></i>Schedule</a></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#topic-abstracts"><i class="fa fa-check"></i>Topic abstracts</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="schedule.html"><a href="schedule.html"><i class="fa fa-check"></i>Schedule</a></li>
 <li class="part"><span><b>Workbook Topics</b></span></li>
-<li class="chapter" data-level="1" data-path="topic-1-intro-to-casa-coding-group.html"><a href="topic-1-intro-to-casa-coding-group.html"><i class="fa fa-check"></i><b>1</b> Topic 1: Intro to CASA Coding Group</a></li>
-<li class="chapter" data-level="2" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>2</b> Topic 2: R and R Markdown</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="1" data-path="file-management.html"><a href="file-management.html"><i class="fa fa-check"></i><b>1</b> File management</a></li>
+<li class="chapter" data-level="2" data-path="textgrid-querying.html"><a href="textgrid-querying.html"><i class="fa fa-check"></i><b>2</b> TextGrid querying</a></li>
+<li class="chapter" data-level="3" data-path="acoustic-analysis.html"><a href="acoustic-analysis.html"><i class="fa fa-check"></i><b>3</b> Acoustic analysis</a></li>
+<li class="chapter" data-level="4" data-path="praatsauce.html"><a href="praatsauce.html"><i class="fa fa-check"></i><b>4</b> PraatSauce</a></li>
+<li class="part"><span><b>Archived Topics</b></span></li>
+<li class="chapter" data-level="" data-path="spring-2020.html"><a href="spring-2020.html"><i class="fa fa-check"></i>Spring 2020</a></li>
+<li class="part"><span><b>Resources</b></span></li>
+<li class="chapter" data-level="" data-path="praat.html"><a href="praat.html"><i class="fa fa-check"></i>Praat</a></li>
+<li class="chapter" data-level="" data-path="r-rstudio.html"><a href="r-rstudio.html"><i class="fa fa-check"></i>R &amp; RStudio</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -92,7 +98,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CASA Lab Coding for Speech Group</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">UB Praat Scripting Workshops</a>
           </h1>
         </div>
 
@@ -101,35 +107,51 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">CASA Lab Coding for Speech Group</h1>
-<p class="author"><em>Director: Thea Knowles, PhD</em></p>
+<h1 class="title">UB Praat Scripting Workshops</h1>
+<p class="date"><em>Spring 2021</em></p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
+<div id="welcome" class="section level1 unnumbered" number="">
 <h1>Welcome</h1>
-<p>The purpose of this group is for members and friends of the <a href="https://casa-lab.netlify.com">CASA Lab</a> to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be <a href="https://www.r-project.org/"><strong>R</strong></a> and <a href="http://www.fon.hum.uva.nl/praat/"><strong>Praat</strong></a>, though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.</p>
-<p>We will meet approximately twice a month. Meeting times TBD following an introductory meet and greet with interested members. Sometimes Thea will lead the group, and other weeks students may sign up to lead.</p>
-<p>This is designed to be an <strong><em>informal, low-stakes, hands-on group</em></strong> to help us all learn in a fun, supportive environment. Meet ups will not be mandatory, and topics will to some extent be driven by group members. There is <strong>no expectation</strong> of prior coding experience for you to join this group, though, if you do have experience, that’s great too!</p>
-<p><strong>Skills you may expect to gain:</strong></p>
-<ul>
-<li>📝 <strong>Report generation</strong>: How to communicate your findings by integrating your writing with your analysis code (e.g., using <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown</a>)</li>
-<li>📊 <strong>Data visualization</strong>: Creating informative and aesthetically pleasing data visualizations for communicating your results (e.g., using <a href="https://ggplot2.tidyverse.org/reference/ggplot.html"><code>ggplot</code></a>)</li>
-<li>📂 <strong>File organization &amp; manipulation</strong>: How to move, rename, or iterate over files on your computer.</li>
-<li>🗣 <strong>Acoustic analysis</strong>: How to write scripts in <a href="http://www.fon.hum.uva.nl/praat/">Praat</a> for doing acoustic analysis on speech audio files.</li>
-</ul>
-<div id="contact" class="section level2 unnumbered">
+<p><strong>Spring 2021 Topics: Praat Scripting Workshops</strong></p>
+<p>The overall purpose of this group is for members and friends of the <a href="https://casa-lab.netlify.com">CASA Lab</a> to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be <a href="https://www.r-project.org/"><strong>R</strong></a> and <a href="http://www.fon.hum.uva.nl/praat/"><strong>Praat</strong></a>, though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.
+This is designed to be an <strong><em>informal, low-stakes, hands-on group</em></strong> to help us all learn in a fun, supportive environment.</p>
+<!-- Meet ups will not be mandatory, and topics will to some extent be driven by group members. There is **no expectation** of prior coding experience for you to join this group, though, if you do have experience, that's great too! -->
+<div id="contact" class="section level2 unnumbered" number="">
 <h2>Contact</h2>
 <p><strong>Interested in joining the group?</strong></p>
 <ul>
-<li>Send an email to the lab director, <a href="mailto:theaknow@buffalo.edu">Thea Knowles</a>.</li>
-<li>Join our <a href="https://join.slack.com/t/casa-lab-ub/shared_invite/enQtOTEyMDk1MzkxMjgzLWU3ZGVhYWViOWU1YjJkZjA0OGEzZGNkMTdhNjM4ZWM5N2FlMDEwOWI3MzE3MWQ4YzM1MmMzYmFiYWIxZGI2NTg">Slack channel</a>, which we will use as a chat forum.</li>
+<li><strong>Preferred method:</strong> Join our <a href="https://join.slack.com/t/ub-phonlab/shared_invite/zt-mcqg2yip-E4Spsu7QjYdfM5niSxS_hA">Slack channel</a>, which we will use as a chat forum and say hi!</li>
+<li><strong>Backup method:</strong> Send an email to the <a href="mailto:theaknow@buffalo.edu">Thea Knowles</a>. Please try to use Slack for most of our communication and rely on email only if you are having trouble accessing Slack.</li>
 </ul>
 </div>
-<div id="prerequisites" class="section level2 unnumbered">
+<div id="prerequisites" class="section level2 unnumbered" number="">
 <h2>Prerequisites</h2>
 <ul>
-<li>You may find it most helpful if you have <a href="https://www.r-project.org/">R</a> and <a href="https://rstudio.com/">R Studio</a> installed on your own laptop to bring to meet ups. If you don’t have your own laptop, we can arrange time for you to work on the CASA lab computers.</li>
-<li>Before each meet up, you will get an email telling you what else you need to install for that meet up, if anything.</li>
+<li>Join our <a href="https://join.slack.com/t/ub-phonlab/shared_invite/zt-mcqg2yip-E4Spsu7QjYdfM5niSxS_hA">Slack channel</a>: We will use Slack to communicate/ask questions about workshops/etc.</li>
+<li>Access our shared <a href="https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q">UB Box folder</a>: This is where we will share materials</li>
+<li>Have <a href="https://www.fon.hum.uva.nl/praat/">Praat</a> installed on your computer</li>
+<li><strong>If you have never done any Praat scripting before</strong>, read the Introduction, Session 1 (“Script Editor…”) and 2 ("Syntactic Structure) from the <a href="https://praatscripting.lingphon.net/index.html">Phonetics on Speed Praat Scripting Tutorial</a></li>
+<li><strong>If you have some Praat scripting experience</strong> feel free to review the tutorial above but no additional work is required.</li>
 </ul>
+<!-- - You may find it most helpful if you have [R](https://www.r-project.org/) and [R Studio](https://rstudio.com/) installed on your own laptop to bring to meet ups. If you don't have your own laptop, we can arrange time for you to work on the CASA lab computers. -->
+<!-- - Before each meet up, you will get an email telling you what else you need to install for that meet up, if anything. -->
+</div>
+<div id="skills-you-may-expect-to-gain" class="section level2 unnumbered" number="">
+<h2>Skills you may expect to gain</h2>
+<p><strong>Spring 2021: Praat scripting workshops</strong></p>
+<ul>
+<li>Why scripting can be useful for automating repetitive tasks in Praat</li>
+<li>Basic scripting skills and (possibly opinionated) best practices</li>
+<li>How to use Praat to query and manage files in a directory (Workshop 1)</li>
+<li>How to use TextGrids and query information from them (Workshop 2)</li>
+<li>How to extract acoustic information from an audio file and accompanying TextGrid (Workshop 3)</li>
+</ul>
+<!-- ### Spring 2020: R & Rmarkdown {-} -->
+<!-- - 📝 **Report generation**: How to communicate your findings by integrating your writing with your analysis code (e.g., using [R Markdown](https://bookdown.org/yihui/rmarkdown/)) -->
+<!-- - 📊 **Data visualization**: Creating informative and aesthetically pleasing data visualizations for communicating your results (e.g., using [`ggplot`](https://ggplot2.tidyverse.org/reference/ggplot.html)) -->
+<!-- - 📂 **File organization & manipulation**: How to move, rename, or iterate over files on your computer. -->
+<!-- - 🗣 **Acoustic analysis**: How to write scripts in [Praat](http://www.fon.hum.uva.nl/praat/) for doing acoustic analysis on speech audio files. -->
+<!-- - **NB** We only had 2 meetings in Spring 2020 because of the onset of the COVID-19 pandemic -->
 <center>
 <a href="https://casa-lab.netlify.com"><img src="img/casa-lab-logo.png" /></a>
 </center>
@@ -142,7 +164,7 @@
         </div>
       </div>
 
-<a href="tentative-plan-schedule.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="schedule.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Resources | CASA Lab Coding for Speech Group</title>
+  <title>3 Acoustic analysis | CASA Lab Coding for Speech Group</title>
   <meta name="description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
-  <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Resources | CASA Lab Coding for Speech Group" />
+  <meta property="og:title" content="3 Acoustic analysis | CASA Lab Coding for Speech Group" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Resources | CASA Lab Coding for Speech Group" />
+  <meta name="twitter:title" content="3 Acoustic analysis | CASA Lab Coding for Speech Group" />
   
   <meta name="twitter:description" content="This is the record keeping site for the CASA Lab Coding for Speech group." />
   
@@ -30,8 +30,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="rmarkdown.html"/>
-
+<link rel="prev" href="textgrid-querying.html"/>
+<link rel="next" href="praatsauce.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +50,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 
@@ -68,18 +70,23 @@
 <li><a href="./">CASA Lab Coding Group</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#skills-you-may-expect-to-gain"><i class="fa fa-check"></i>Skills you may expect to gain</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html"><i class="fa fa-check"></i>Tentative Plan &amp; Schedule</a><ul>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#schedule"><i class="fa fa-check"></i>Schedule</a></li>
-<li class="chapter" data-level="" data-path="tentative-plan-schedule.html"><a href="tentative-plan-schedule.html#topic-abstracts"><i class="fa fa-check"></i>Topic abstracts</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="schedule.html"><a href="schedule.html"><i class="fa fa-check"></i>Schedule</a></li>
 <li class="part"><span><b>Workbook Topics</b></span></li>
-<li class="chapter" data-level="1" data-path="topic-1-intro-to-casa-coding-group.html"><a href="topic-1-intro-to-casa-coding-group.html"><i class="fa fa-check"></i><b>1</b> Topic 1: Intro to CASA Coding Group</a></li>
-<li class="chapter" data-level="2" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>2</b> Topic 2: R and R Markdown</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="1" data-path="file-management.html"><a href="file-management.html"><i class="fa fa-check"></i><b>1</b> File management</a></li>
+<li class="chapter" data-level="2" data-path="textgrid-querying.html"><a href="textgrid-querying.html"><i class="fa fa-check"></i><b>2</b> TextGrid querying</a></li>
+<li class="chapter" data-level="3" data-path="acoustic-analysis.html"><a href="acoustic-analysis.html"><i class="fa fa-check"></i><b>3</b> Acoustic analysis</a></li>
+<li class="chapter" data-level="4" data-path="praatsauce.html"><a href="praatsauce.html"><i class="fa fa-check"></i><b>4</b> PraatSauce</a></li>
+<li class="part"><span><b>Archived Topics</b></span></li>
+<li class="chapter" data-level="" data-path="spring-2020.html"><a href="spring-2020.html"><i class="fa fa-check"></i>Spring 2020</a></li>
+<li class="part"><span><b>Resources</b></span></li>
+<li class="chapter" data-level="" data-path="praat.html"><a href="praat.html"><i class="fa fa-check"></i>Praat</a></li>
+<li class="chapter" data-level="" data-path="r-rstudio.html"><a href="r-rstudio.html"><i class="fa fa-check"></i>R &amp; RStudio</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -100,26 +107,17 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="resources" class="section level1 unnumbered">
-<h1>Resources</h1>
-<ul>
-<li><a href="https://education.rstudio.com/learn/beginner/">RStudio’s recommended beginner R links</a>: Lots of tutorials, suggestions, and cheat sheets!</li>
-<li><a href="https://r4ds.had.co.nz/">R for Data Science</a>: THE book on learning R.</li>
-<li><a href="https://tinystats.github.io/teacups-giraffes-and-statistics/index.html">Teacup Giraffes</a>: Intro modules to statistics with R</li>
-<li><a href="https://rladiessydney.org/courses/ryouwithme/">“R you with me?”</a>: A series of online learning resources for beginner R users designed by <a href="https://rladiessydney.org/">R-Ladies Sydney</a></li>
-</ul>
-<p>There will also be content-specific resources posted at the end of each [workshop][Workbook].</p>
-<!-- Check out [our resources][Workshops] -->
-<!-- Note I linked to the section header text -->
-
+<div id="acoustic-analysis" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Acoustic analysis</h1>
+<p>👀 <strong>Watch this space!</strong></p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="rmarkdown.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="textgrid-querying.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="praatsauce.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

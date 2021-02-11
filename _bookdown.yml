@@ -3,3 +3,15 @@ delete_merged_file: true
 language:
   ui:
     chapter_name: ""
+    
+rmd_files:
+  [
+    "index.Rmd",
+    "01-plan.Rmd",
+    "10-worksheets.Rmd",
+    "praat-scripting-workshops.Rmd",
+    "archive.Rmd",
+    "2020-01-intro.Rmd",
+    "2020-02-Workshop1-rmd.Rmd",
+    "999-resources.Rmd"
+    ]

@@ -1,4 +1,5 @@
-# Topic 1: Intro to CASA Coding Group
+# Spring 2020 {-}
+#### Topic 1: Intro to CASA Coding Group {-}
 Date: 25/02/2020
 
 This meet up will mostly serve as a means to chat logistics. We will also use this opportunity to install R, RStudio, and Praat. We will take a look at RStudio.

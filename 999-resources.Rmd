@@ -1,5 +1,14 @@
-# Resources {-}
+# (PART\*) Resources {-}
 
+# Praat {-}
+- Materials in our Praat scripting workshops shared [UB Box folder](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q)
+- [Praat](https://www.fon.hum.uva.nl/praat/)
+- [Phonetics on Speed Praat Scripting Tutorial](https://praatscripting.lingphon.net/index.html)
+- [Joey Stanley's Praat Scripting Tutorial](https://joeystanley.com/downloads/190918-praat_scripting#1_creating_a_praat_script)
+- []
+
+
+# R & RStudio {-}
 - [RStudio's recommended beginner R links](https://education.rstudio.com/learn/beginner/): Lots of tutorials, suggestions, and cheat sheets!
 - [R for Data Science](https://r4ds.had.co.nz/): THE book on learning R.
 - [Teacup Giraffes](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html): Intro modules to statistics with R

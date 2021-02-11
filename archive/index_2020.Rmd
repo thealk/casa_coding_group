@@ -1,0 +1,49 @@
+--- 
+title: "CASA Lab Coding for Speech Group"
+author: "Director: Thea Knowles, PhD"
+#date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is the record keeping site for the CASA Lab Coding for Speech group."
+---
+
+# Welcome {-}
+
+
+```{r echo=FALSE}
+library(emo)
+```
+
+The purpose of this group is for members and friends of the [CASA Lab](https://casa-lab.netlify.com) to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be [**R**](https://www.r-project.org/) and [**Praat**](http://www.fon.hum.uva.nl/praat/), though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.
+
+We will meet approximately twice a month. Meeting times TBD following an introductory meet and greet with interested members. Sometimes Thea will lead the group, and other weeks students may sign up to lead. 
+
+This is designed to be an ***informal, low-stakes, hands-on group*** to help us all learn in a fun, supportive environment. Meet ups will not be mandatory, and topics will to some extent be driven by group members. There is **no expectation** of prior coding experience for you to join this group, though, if you do have experience, that's great too!
+
+**Skills you may expect to gain:**
+
+- `r emo::ji("memo")` **Report generation**: How to communicate your findings by integrating your writing with your analysis code (e.g., using [R Markdown](https://bookdown.org/yihui/rmarkdown/))
+- `r emo::ji("bar_chart")` **Data visualization**: Creating informative and aesthetically pleasing data visualizations for communicating your results (e.g., using [`ggplot`](https://ggplot2.tidyverse.org/reference/ggplot.html))
+- `r emo::ji("open_file_folder")` **File organization & manipulation**: How to move, rename, or iterate over files on your computer.
+- `r emo::ji("speaking_head")` **Acoustic analysis**: How to write scripts in [Praat](http://www.fon.hum.uva.nl/praat/) for doing acoustic analysis on speech audio files.
+
+
+## Contact {-}
+**Interested in joining the group?**
+
+- Send an email to the lab director, [Thea Knowles](mailto:theaknow@buffalo.edu).
+- Join our [Slack channel](https://join.slack.com/t/casa-lab-ub/shared_invite/enQtOTEyMDk1MzkxMjgzLWU3ZGVhYWViOWU1YjJkZjA0OGEzZGNkMTdhNjM4ZWM5N2FlMDEwOWI3MzE3MWQ4YzM1MmMzYmFiYWIxZGI2NTg), which we will use as a chat forum.
+
+## Prerequisites {-}
+
+- You may find it most helpful if you have [R](https://www.r-project.org/) and [R Studio](https://rstudio.com/) installed on your own laptop to bring to meet ups. If you don't have your own laptop, we can arrange time for you to work on the CASA lab computers.
+- Before each meet up, you will get an email telling you what else you need to install for that meet up, if anything.
+
+<center>
+[![](img/casa-lab-logo.png)](https://casa-lab.netlify.com)
+</center>
+
+

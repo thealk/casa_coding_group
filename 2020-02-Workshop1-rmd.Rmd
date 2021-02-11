@@ -1,4 +1,4 @@
-# Topic 2: R and R Markdown {#rmarkdown}
+##### Topic 2: R and R Markdown {#rmarkdown} {-}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

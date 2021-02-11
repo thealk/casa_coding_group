@@ -1,0 +1,15 @@
+# File management
+
+`r emo::ji("eyes")` **Watch this space!**
+
+# TextGrid querying
+
+`r emo::ji("eyes")` **Watch this space!**
+
+# Acoustic analysis
+
+`r emo::ji("eyes")` **Watch this space!**
+
+# PraatSauce
+
+`r emo::ji("eyes")` **Watch this space!**
