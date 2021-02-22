@@ -2,6 +2,17 @@
 
 `r emo::ji("eyes")` **Watch this space!**
 
+`r emo::ji("books")` [**Data & materials** (on shared Box folder)](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q)
+
+- Download these materials and copy them to your local computer
+- Presentation slides will appear in this folder prior to the workshop
+
+**Zoom info** (link will be the same link for all workshops):
+
+- [https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09](https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09)
+- **Meeting ID**: 987 3734 2718
+- **Passcode**: UBPraat
+
 # TextGrid querying
 
 `r emo::ji("eyes")` **Watch this space!**
