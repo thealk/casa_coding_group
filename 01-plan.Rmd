@@ -18,5 +18,5 @@ Topic: UB Praat Scripting Workshops
 Join Zoom Meeting
 [https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09](https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09)
 
-Meeting ID: 987 3734 2718
-Passcode: UBPraat
+- Meeting ID: 987 3734 2718
+- Passcode: UBPraat
