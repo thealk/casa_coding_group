@@ -2,8 +2,7 @@
 
 Our group will meet 4 - 5 times in the Spring 2021 semester. Meet ups will be **Wednesdays at 10am**.
 
-All meet ups will be held virtually on Zoom:
-[Zoom link TBD]()
+All meet ups will be held virtually on Zoom (invite below).
 
 |  Date|  Topic| Presenter|
 |:--:|:--:|:--:|
@@ -12,3 +11,12 @@ All meet ups will be held virtually on Zoom:
 |  4/7|  Acoustic extraction| Christian DiCanio|
 |  4/28|  Intro to PraatSauce (*Tentative*)|TBD|
 | TBD| | |
+
+## Zoom link {-}
+Topic: UB Praat Scripting Workshops
+
+Join Zoom Meeting
+[https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09](https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09)
+
+Meeting ID: 987 3734 2718
+Passcode: UBPraat
