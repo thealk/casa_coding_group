@@ -1,17 +1,25 @@
 # File management
 
-`r emo::ji("eyes")` **Watch this space!**
+## Materials
 
 `r emo::ji("books")` [**Data & materials** (on shared Box folder)](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q){target="_blank"}
 
 - Download these materials and copy them to your local computer
-- Presentation slides will appear in this folder prior to the workshop
 
-`r emo::ji("computer")` **Zoom info** (link will be the same link for all workshops):
 
-- [https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09](https://buffalo.zoom.us/j/98737342718?pwd=TndYdnl6Vk9wZ0svczlwR1kwMWJqdz09){target="_blank"}
-- **Meeting ID**: 987 3734 2718
-- **Passcode**: UBPraat
+## Video recording
+- Please note: We went over some preliminaries on using Slack & making sure everyone had the data saved to their computer first; this part does not appear in the video
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=92a1a8fe-f5aa-4894-9151-acd9012767ca&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+[Link to video](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92a1a8fe-f5aa-4894-9151-acd9012767ca)
+
+
+## Slides
+```{r echo = FALSE}
+knitr::include_url("presentations/praat_scripting/UB_Praat_Scripting_workshop1.pdf")
+```
+
 
 # TextGrid querying
 
