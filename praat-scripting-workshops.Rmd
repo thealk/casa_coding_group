@@ -23,7 +23,23 @@ knitr::include_url("presentations/praat_scripting/UB_Praat_Scripting_workshop1.p
 
 # TextGrid querying
 
-`r emo::ji("eyes")` **Watch this space!**
+## Materials
+
+`r emo::ji("books")` [**Data & materials** (on shared Box folder)](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q){target="_blank"}
+
+- These are the same materials as Workshop 1
+- If you haven't yet, download them and save them to your computer to follow along
+
+## Video
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=763b01e5-1515-4765-b5e3-acee0113c6ff&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+[Link to video](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=763b01e5-1515-4765-b5e3-acee0113c6ff)
+
+## Slides
+```{r echo = FALSE}
+knitr::include_url("presentations/praat_scripting/Praat Script Training Session 2 2021-03-17.pdf")
+```
+
 
 # Acoustic analysis
 
