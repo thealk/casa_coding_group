@@ -1,11 +1,10 @@
-# File management
+# Materials {-}
 
-## Materials
-
-`r emo::ji("books")` [**Data & materials** (on shared Box folder)](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q){target="_blank"}
+`r emo::ji("books")` [**Data & materials for all workshops available in shared Box folder**](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q){target="_blank"}
 
 - Download these materials and copy them to your local computer
 
+# File management
 
 ## Video recording
 - Please note: We went over some preliminaries on using Slack & making sure everyone had the data saved to their computer first; this part does not appear in the video
@@ -17,18 +16,11 @@
 
 ## Slides
 ```{r echo = FALSE}
-knitr::include_url("presentations/praat_scripting/UB_Praat_Scripting_workshop1.pdf")
+knitr::include_url("presentations/praat_scripting/Praat_scripting_1_Knowles_2021-02-24.pdf")
 ```
 
 
 # TextGrid querying
-
-## Materials
-
-`r emo::ji("books")` [**Data & materials** (on shared Box folder)](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q){target="_blank"}
-
-- These are the same materials as Workshop 1
-- If you haven't yet, download them and save them to your computer to follow along
 
 ## Video
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=763b01e5-1515-4765-b5e3-acee0113c6ff&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
@@ -37,14 +29,19 @@ knitr::include_url("presentations/praat_scripting/UB_Praat_Scripting_workshop1.p
 
 ## Slides
 ```{r echo = FALSE}
-knitr::include_url("presentations/praat_scripting/Praat Script Training Session 2 2021-03-17.pdf")
+knitr::include_url("presentations/praat_scripting/Praat_scripting_2_Heffner_2021-03-17.pdf")
 ```
 
 
-# Acoustic analysis
+# Acoustic analysis & extraction
 
-`r emo::ji("eyes")` **Watch this space!**
+## Video
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=14afe3d1-847f-4d47-a894-ad03014c6f77&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+## Slides
+```{r echo = FALSE}
+knitr::include_url("presentations/praat_scripting/Praat_scripting_3_Dicanio_2021-04-07.pdf")
+```
 # PraatSauce
 
 `r emo::ji("eyes")` **Watch this space!**
