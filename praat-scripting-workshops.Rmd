@@ -43,5 +43,13 @@ knitr::include_url("presentations/praat_scripting/Praat_scripting_2_Heffner_2021
 knitr::include_url("presentations/praat_scripting/Praat_scripting_3_Dicanio_2021-04-07.pdf")
 ```
 # PraatSauce
+`r emo::ji("eyes")` **Watch this space for more info!**
 
-`r emo::ji("eyes")` **Watch this space!**
+ [PraatSauce](https://github.com/kirbyj/praatsauce) is a set of Praat Scripts written by James Kirby designed to facilitate extraction of spectral measures from acoustic data.
+ 
+ Christian & Thea will each demo PraatSauce on a subset of their own data. We will also briefly discuss the two papers below.
+
+## Papers for discussion
+
+1. [Brunelle et al., 2020](https://www.journal-labphon.org/article/10.5334/labphon.278/) 
+2. [Kirby & Hyslop, 2019](https://assta.org/proceedings/ICPhS2019/papers/ICPhS_3656.pdf)
