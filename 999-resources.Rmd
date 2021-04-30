@@ -1,11 +1,13 @@
 # (PART\*) Resources {-}
 
 # Praat {-}
-- Materials in our Praat scripting workshops shared [UB Box folder](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q)
 - [Praat](https://www.fon.hum.uva.nl/praat/)
+- Materials in our Praat scripting workshops shared [UB Box folder](https://buffalo.box.com/s/nam5hsmqhgq02hye4tee7ujth0tut56q)
 - [Phonetics on Speed Praat Scripting Tutorial](https://praatscripting.lingphon.net/index.html)
 - [Joey Stanley's Praat Scripting Tutorial](https://joeystanley.com/downloads/190918-praat_scripting#1_creating_a_praat_script)
-- []
+- [Christian DiCanio's Praat scripts](http://www.acsu.buffalo.edu/~cdicanio/scripts.html)
+- [Thea Knowles' Praat scripts (in beta)](https://github.com/thealk/PraatScripts)
+- [PraatSauce](https://github.com/kirbyj/praatsauce)
 
 
 # R & RStudio {-}
@@ -14,7 +16,7 @@
 - [Teacup Giraffes](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html): Intro modules to statistics with R
 - ["R you with me?"](https://rladiessydney.org/courses/ryouwithme/): A series of online learning resources for beginner R users designed by [R-Ladies Sydney](https://rladiessydney.org/)
 
-There will also be content-specific resources posted at the end of each [workshop][Workbook].
+There will also be content-specific resources posted at the end of each workshop.
 
 <!-- Check out [our resources][Workshops] -->
 <!-- Note I linked to the section header text -->

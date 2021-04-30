@@ -19,6 +19,9 @@ library(emo)
 
 **Spring 2021 Topics: Praat Scripting Workshops**
 
+
+<span style="color:red"> **Our workshops concluded on April 28, 2021. Thanks to everyone who participated this spring!** </span>
+
 The overall purpose of this group is for members and friends of the [CASA Lab](https://casa-lab.netlify.com) to learn basic coding skills that are helpful for speech analysis. The languages/environments we will learn will usually be [**R**](https://www.r-project.org/) and [**Praat**](http://www.fon.hum.uva.nl/praat/), though we may extend to include other languages over time. Many of the skills we will work on will be directly applicable to projects in the CASA Lab, but the hope is that you will gain skills that you will find personally valuable as well for your own work.
 This is designed to be an ***informal, low-stakes, hands-on group*** to help us all learn in a fun, supportive environment. 
 

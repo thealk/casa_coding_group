@@ -8,5 +8,8 @@ acoustic-analysis-extraction
 video-1
 slides-2
 praatsauce
-praatsauce-a-set-of-praat-scripts-written-by-james-kirby-designed-to-facilitate-extraction-of-spectral-measures-from-acoustic-data.
+voice-quality-presentations
 papers-for-discussion
+praatsauce-demo
+video-2
+demo-video

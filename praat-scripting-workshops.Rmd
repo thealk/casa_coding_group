@@ -6,7 +6,7 @@
 
 # File management
 
-## Video recording
+## Video
 - Please note: We went over some preliminaries on using Slack & making sure everyone had the data saved to their computer first; this part does not appear in the video
 
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=92a1a8fe-f5aa-4894-9151-acd9012767ca&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
@@ -42,14 +42,30 @@ knitr::include_url("presentations/praat_scripting/Praat_scripting_2_Heffner_2021
 ```{r echo = FALSE}
 knitr::include_url("presentations/praat_scripting/Praat_scripting_3_Dicanio_2021-04-07.pdf")
 ```
-# PraatSauce
-`r emo::ji("eyes")` **Watch this space for more info!**
 
- [PraatSauce](https://github.com/kirbyj/praatsauce) is a set of Praat Scripts written by James Kirby designed to facilitate extraction of spectral measures from acoustic data.
+# PraatSauce
+
+
+[PraatSauce](https://github.com/kirbyj/praatsauce) is a set of Praat Scripts written by James Kirby designed to facilitate extraction of spectral measures from acoustic data.
  
- Christian & Thea will each demo PraatSauce on a subset of their own data. We will also briefly discuss the two papers below.
+Christian and Thea gave an overview of voice quality considerations cross-linguistically and in clinical populations. We briefly discussed the two papers below. Christian gave an "unboxing" demo of PraatSauce and then he and Thea demo'd it on their own data. The video of this workshop only includes the PraatSauce demo.
+
+## Demo video
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b1b87a70-94e9-40ea-8fcd-ad18010cce14&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+## Voice quality presentations
+Note: If you want to be able to hear the audio clips used in Christian's presentation, you'll need a copy of the Voice_quality_presentation folder from Box.
+
+```{r echo = FALSE}
+knitr::include_url("presentations/praat_scripting/Voice_quality_praatsauce copy.pdf")
+```
+
+```{r echo = FALSE}
+knitr::include_url("presentations/praat_scripting/VQ_dysarthria.pdf")
+```
 
 ## Papers for discussion
 
 1. [Brunelle et al., 2020](https://www.journal-labphon.org/article/10.5334/labphon.278/) 
 2. [Kirby & Hyslop, 2019](https://assta.org/proceedings/ICPhS2019/papers/ICPhS_3656.pdf)
+
